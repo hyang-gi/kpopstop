@@ -1,6 +1,6 @@
-## Git Tutorial
+## How to use Git in the terminal
 
-## How to pull
+### How to pull
 After clone, run 'git pull'
 
 ### How to create a new branch
@@ -15,5 +15,4 @@ Run checkout -b "Your branch name"
 
 ### How to make pull request
 Go to github website and find your branch, click on "New pull request"
-
-
+or run gh pr create
