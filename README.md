@@ -2,6 +2,9 @@
 
 ## IDM Project
 
+## How to pull
+After clone, run 'git pull'
+
 ### How to use Git
 1. Modify your files
 2. Run 'git status' to check the modified files
@@ -9,4 +12,4 @@
 4. Run git commit -m "Notes for this change"
 5. Run git push
 
-## How to pull
+
