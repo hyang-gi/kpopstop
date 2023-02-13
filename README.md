@@ -1,5 +1,5 @@
 # Web Accessibility Project Group 6: kpopstop
-### Group Members: Gillian, Molly, Nikhat, Wesley, Zaynab
+#### Group Members: Gillian, Molly, Nikhat, Wesley, Zaynab
 
 ## Assignment Brief
 
@@ -16,4 +16,4 @@ Note: This section will be updated based on weekly-basis based on the project pr
 
 ## Navigation
 
-1. [Git Tutorial]()
+1. [Git Tutorial](gitTutorial.md)
