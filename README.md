@@ -16,4 +16,4 @@ Note: This section will be updated based on weekly-basis based on the project pr
 
 ## Navigation
 
-1. [Git Tutorial](gitTutorial.md)
+1. [Git Tutorial](https://github.com/hyang-gi/kpopstop/blob/main/gitTutorial.md)
