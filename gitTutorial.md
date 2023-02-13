@@ -30,5 +30,5 @@
 
 ### Create a Pull Request
 
-1. Visit [here](https://github.com/hyang-gi/kpopstop/pulls) and select the pull request option 
+1. Visit [here](https://github.com/hyang-gi/kpopstop/pulls) and select the pull request option which appears as an alert
 2. Or use `gh pr create`
