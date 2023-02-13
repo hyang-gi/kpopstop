@@ -1,12 +1,12 @@
-# kpopstop
+# Web Accessibility Project Group 6: kpopstop
+### Group Members: Gillian, Molly, Nikhat, Wesley, Zaynab
 
-## IDM Project
+## Assignment Brief
 
-## How to pull
-After clone, run 'git pull'
+Design and develop an accessible web site using valid HTML5 and CSS3. The function of the web site is to deliver information about a specific building or buildings to a specific audience. 
 
-### How to use Git
-0. Run checkout -b "Your branch name"
+### Deliverables
+
 
 1. Modify your files
 2. Run 'git status' to check the modified files
@@ -17,3 +17,11 @@ After clone, run 'git pull'
 gh pr create
 
 
+1. Group Pitch
+2. Statement of Intent
+3. Information Map & Wireframes
+
+
+## Navigation
+
+1. [Git Tutorial]()
