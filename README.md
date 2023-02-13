@@ -1,8 +1,9 @@
-# kpopstop
+# IDM Project kpopstop
 
-## IDM Project
 
-## How to pull
+## How to use Git in the terminal
+
+### How to pull
 After clone, run 'git pull'
 
 ### How to create a new branch
