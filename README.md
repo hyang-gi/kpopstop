@@ -12,7 +12,7 @@ After clone, run 'git pull'
 2. Run 'git status' to check the modified files
 3. Stage the change: 'git add' + the name of the changed file
 4. Run git commit -m "Notes for this change"
-5. Run "git push --set-upstream origin 'your branch name'"(Next time just git push)
-6. Make pull request: git request-pull https://github.com/hyang-gi/kpopstop.git main
+5. Run "git push --set-upstream origin 'your branch name'" (Next time just use git push)
+6. Make pull request: Go to github website
 
 
