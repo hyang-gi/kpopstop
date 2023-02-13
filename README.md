@@ -1,19 +1,19 @@
-# kpopstop
+# Web Accessibility Project Group 6: kpopstop
+### Group Members: Gillian, Molly, Nikhat, Wesley, Zaynab
 
-## IDM Project
+## Assignment Brief
 
-## How to pull
-After clone, run 'git pull'
+Design and develop an accessible web site using valid HTML5 and CSS3. The function of the web site is to deliver information about a specific building or buildings to a specific audience. 
 
-### How to create a new branch
-Run checkout -b "Your branch name"
+### Deliverables
 
-### How to push changes
-1. Modify your files
-2. Run 'git status' to check the modified files
-3. Stage the change: 'git add' + the name of the changed file
-4. Run git commit -m "Notes for this change"
-5. Run "git push --set-upstream origin 'your branch name'" (Next time just use git push)
+Note: This section will be updated based on weekly-basis based on the project progress.
 
-### How to make pull request
-Go to github website and find your branch, click on "New pull request"
+1. Group Pitch
+2. Statement of Intent
+3. Information Map & Wireframes
+
+
+## Navigation
+
+1. [Git Tutorial]()
