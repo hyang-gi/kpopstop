@@ -11,7 +11,7 @@ Note: This section will be updated based on weekly-basis based on the project pr
 
 1. Group Pitch
 2. Statement of Intent
-3. Site Man and Task Flows
+3. Site Map and Task Flows
 4. Information Map & Wireframes
 
 
