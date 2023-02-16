@@ -19,6 +19,8 @@
 
 ### How to push changes
 
+Note: Before making change, make sure you have the [latest version](#how-to-pull) of the repository 
+
 1. Modify your files
 2. Use `git status` to check the list of modified files
 3. To stage the changes (ie. add them to be pushed to the repository from local), use `git add <file_name.extension`
