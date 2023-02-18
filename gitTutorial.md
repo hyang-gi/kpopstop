@@ -1,3 +1,13 @@
+## Issue
+
+1. To create an issue, visit the [Issues](https://github.com/hyang-gi/kpopstop/issues) section under the repository and click on New Issue
+2. Assign the member(s) the task is for or leave it blank if not applicable yet
+3. Choose the appropriate label(s), description for each label is provided in the list
+4. `high`, `medium`, and `low` would be few default label options to help the team prioritise the work
+5. Set `in_progress` label if the task is being worked on
+6. Once the task is completed, close the issue with an update (if applicable)
+7. If the issue corresponds with a Pull Request, using `#` and PR number to link them.
+
 ## Git Tutorial (Using Terminal)
 
 ### Clone a repository
