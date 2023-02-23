@@ -19,3 +19,4 @@ Note: This section will be updated based on weekly-basis based on the project pr
 
 1. [Git Tutorial](https://github.com/hyang-gi/kpopstop/blob/main/gitTutorial.md)
 2. [Moodboard](https://www.behance.net/collection/201614019/Authoring-Project)
+3. [Style Formats](https://github.com/hyang-gi/kpopstop/blob/main/styleFormat.md)
