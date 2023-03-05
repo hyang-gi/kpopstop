@@ -1,0 +1,190 @@
+/*  CSS skeleton subject to modify */
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .primary-nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .menu-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .menu-item a:hover {
+    color: #666;
+  }
+  
+  /* Secondary nav */
+  .secondary-nav {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .secondary-nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .secondary-nav-button a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .secondary-nav-button a:hover {
+    color: #666;
+  }
+  
+  .secondary-nav-button-icon {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Banner */
+  .banner {
+    position: relative;
+  }
+  
+  .banner-image {
+    display: block;
+    width: 100%;
+  }
+  
+  .banner-nav-dot {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: #ccc;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .banner-nav-dot.active {
+    background-color: #333;
+  }
+
+  /* Styling for the company blocks */
+.companies-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .company-block {
+    width: calc(33.333% - 20px);
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .company-block-photo {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .company-block-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .company-block-entertainment {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+  }
+  
+
+  /* Footer container */
+.footer {
+  background-color: #333; /* set background color */
+  color: #fff; /* set text color */
+  padding: 20px; /* add padding */
+}
+
+/* Footer logo */
+.footer-logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Social media logo container */
+.social-logo-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px; /* add margin */
+}
+
+/* Social media logo */
+.social-logo {
+  display: inline-block;
+  margin-right: 10px; /* add margin */
+}
+
+.social-logo a img {
+  width: 30px; /* set image width */
+  height: 30px; /* set image height */
+}
+
+/* Footer navigation bar */
+.footer-nav-bar {
+  margin-top: 20px; /* add margin */
+}
+
+/* Footer navigation item */
+.footer-nav-item {
+  display: inline-block;
+  margin-right: 20px; /* add margin */
+}
+
+.footer-nav-item a {
+  color: #fff; /* set link color */
+}
