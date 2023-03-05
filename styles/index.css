@@ -8,15 +8,15 @@
   
   /* Global styles */
   body {
-    font-family: sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #f7f7f7;
+    background-color: #0E1114;
   }
   
   /* Header */
   .header {
-    background-color: #fff;
+    background-color: #0E1114;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
