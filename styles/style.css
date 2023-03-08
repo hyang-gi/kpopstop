@@ -12,6 +12,7 @@
     font-size: 16px;
     line-height: 1.5;
     background-color: #0E1114;
+    color: #f2f2f2;
   }
   
   /* Header */
@@ -49,7 +50,7 @@
   }
   
   .menu-item a:hover {
-    color: #666;
+    color: #f2f2f2;
   }
   
   /* Secondary nav */
@@ -74,7 +75,7 @@
   }
   
   .secondary-nav-button a:hover {
-    color: #666;
+    color: #f2f2f2;
   }
   
   .secondary-nav-button-icon {
@@ -133,13 +134,13 @@
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 10px;
-    color: #333;
+    color: #f2f2f2;
   }
   
   .company-block-entertainment {
     font-size: 16px;
     font-weight: 400;
-    color: #666;
+    color: #f2f2f2;
   }
   
 
