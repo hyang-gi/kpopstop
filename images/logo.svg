@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 609.1 208.41">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #a3e7fc;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: HelveticaNeue-CondensedBold, 'Helvetica Neue';
+        font-size: 152.2px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-2" transform="translate(44.46 155.77)"><tspan x="0" y="0">kpopstop</tspan></text>
+      <g>
+        <line class="cls-1" x1=".47" y1="44.51" x2="131.27" y2="1.51"/>
+        <line class="cls-1" x1="129.45" y1="1.24" x2="176.93" y2="33.19"/>
+        <line class="cls-1" x1="130" y1="1.62" x2="130" y2="62.55"/>
+        <line class="cls-1" x1="178.13" y1="62.55" x2="177.17" y2="1.99"/>
+        <line class="cls-1" x1="2.02" y1="154.71" x2="1.92" y2="42.53"/>
+        <line class="cls-1" x1="214.91" y1="62.54" x2="214.81" y2="29.55"/>
+        <line class="cls-1" x1="176.94" y1="2.54" x2="216.14" y2="31.9"/>
+        <line class="cls-1" x1="146.88" y1="12.97" x2="178.94" y2="2.83"/>
+      </g>
+    </g>
+  </g>
+</svg>
