@@ -26,11 +26,6 @@
   .header {
     background-color: #0E1114;
     padding: 1rem 6rem 1rem 6rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
   }
   
   .top-bar {
@@ -104,69 +99,7 @@
 
   .secondary-nav-button span {
     padding-top: 0.5rem; 
-  }
-  
-  /* Banner */
-  .banner {
-    position: relative;
-  }
-  
-  .banner-image {
-    display: block;
-    width: 100%;
-  }
-  
-  .banner-nav-dot {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    background-color: #ccc;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .banner-nav-dot.active {
-    background-color: #333;
-  }
-
-  /* Styling for the company blocks */
-.companies-container {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .company-block {
-    width: calc(33.333% - 20px);
-    margin-bottom: 40px;
-    position: relative;
-  }
-  
-  .company-block-photo {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .company-block-name {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 10px;
-    color: #f2f2f2;
-  }
-  
-  .company-block-entertainment {
-    font-size: 16px;
-    font-weight: 400;
-    color: #f2f2f2;
-  }
-  
+  }  
 
   /* Footer container */
 .footer {
