@@ -143,30 +143,33 @@ body {
 }
 
 /* Social media logo container */
-/* .social-logo-container {
-  margin-left: 50%;
-  margin-right: 50%;
-} */
+.social-logo-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
 
 /* Social media logo */
 .social-logo {
-
+  /* display: inline-block; */
 }
 
-.social-logo a img {
-  margin-left: 50%;
-  margin-right: 50%;
-  width: 2.5%;
-  height: 2.5%;
+.social-logo img {
+  width: 36%;
+  height: 36%;
 }
 
 /* Footer navigation bar */
-.footer-nav-bar {}
+.footer-nav-bar {
+  display: flex;
+  justify-content: center;
+}
 
 /* Footer navigation item */
-.footer-nav-item {}
 
-.footer-nav-item a {
+.footer-nav-item {
   color: #fff;
+  padding-left: 2rem;
+  padding-top: 2rem;
   /* set link color */
 }
