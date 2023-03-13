@@ -177,37 +177,30 @@
 
 /* Footer logo */
 .footer-logo {
-  display: inline-block;
-  vertical-align: middle;
+ 
 }
 
 /* Social media logo container */
 .social-logo-container {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 20px; /* add margin */
+ 
 }
 
 /* Social media logo */
 .social-logo {
-  display: inline-block;
-  margin-right: 10px; /* add margin */
+ 
 }
 
 .social-logo a img {
-  width: 30px; /* set image width */
-  height: 30px; /* set image height */
+ 
 }
 
 /* Footer navigation bar */
 .footer-nav-bar {
-  margin-top: 20px; /* add margin */
 }
 
 /* Footer navigation item */
 .footer-nav-item {
-  display: inline-block;
-  margin-right: 20px; /* add margin */
+ 
 }
 
 .footer-nav-item a {
