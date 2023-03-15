@@ -1,5 +1,3 @@
-/*  CSS skeleton subject to modify */
-/* Reset */
 :root {
   --primary: #A3E7FC;
   --hybe: #E07D33;
@@ -183,9 +181,6 @@ body {
 }
 
 /* Social media logo */
-.social-logo {
-  /* margin-left: 8%; */
-}
 
 .social-logo img {
   width: 36%;
@@ -204,5 +199,4 @@ body {
   color: #f2f2f2;
   padding-left: 2rem;
   padding-top: 2rem;
-  /* set link color */
 }
