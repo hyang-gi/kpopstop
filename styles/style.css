@@ -111,9 +111,9 @@ body {
 
 .company-block {
   /* position: relative; */
-    /* flex-direction: column; */
-    width: 50%;
-    height: 50%;
+  /* flex-direction: column; */
+  width: 50%;
+  height: 50%;
 }
 
 
@@ -125,7 +125,7 @@ body {
 
 /* Footer container */
 .footer {
-  
+
   background-color: #333;
   /* set background color */
   color: #fff;
@@ -136,19 +136,22 @@ body {
 
 /* Footer logo */
 .footer-logo {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo img {
   width: 6%;
   height: 6%;
-  margin-left: 50%;
-  margin-right: 50%;
-  padding-bottom: 2rem;
-
 }
 
 /* Social media logo container */
 .social-logo-container {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Social media logo */
