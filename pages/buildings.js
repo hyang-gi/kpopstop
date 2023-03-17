@@ -12,6 +12,11 @@ const history = {
     img3Src: "../images/buildings/hybe/img12.png",
     img4Src: "../images/buildings/hybe/img13.jpg",
     img5Src: "../images/buildings/hybe/hybe_insight_entrance.jpg",
+    bandLogo1Src: "../images/bands/hybe/bandLogo1.png",
+    bandLogo2Src: "../images/bands/hybe/bandLogo2.png",
+    bandLogo3Src: "../images/bands/hybe/bandLogo3.png",
+    bandLogo4Src: "../images/bands/hybe/bandLogo4.png",
+    bandLogo5Src: "../images/bands/hybe/bandLogo5.png",
   },
   yge: {
     title: "YG Entertainment",
@@ -26,6 +31,11 @@ const history = {
     img3Src: "../images/buildings/yge/img12.png",
     img4Src: "../images/buildings/yge/img13.jpg",
     img5Src: "../images/buildings/yge/img1.jpg",
+    bandLogo1Src: "../images/bands/yge/bandLogo1.png",
+    bandLogo2Src: "../images/bands/yge/bandLogo2.png",
+    bandLogo3Src: "../images/bands/yge/bandLogo3.png",
+    bandLogo4Src: "../images/bands/yge/bandLogo4.png",
+    bandLogo5Src: "../images/bands/yge/bandLogo5.png",
   },
   sme: {
     title: "SM Entertainment",
@@ -40,6 +50,11 @@ const history = {
     img3Src: "../images/buildings/sme/img12.png",
     img4Src: "../images/buildings/sme/img13.jpg",
     img5Src: "../images/buildings/sme/img13.jpg",
+    bandLogo1Src: "../images/bands/sme/bandLogo1.png",
+    bandLogo2Src: "../images/bands/sme/bandLogo2.png",
+    bandLogo3Src: "../images/bands/sme/bandLogo3.png",
+    bandLogo4Src: "../images/bands/sme/bandLogo4.png",
+    bandLogo5Src: "../images/bands/sme/bandLogo5.png",
   },
   jype: {
     title: "JYP Entertainment",
@@ -54,6 +69,11 @@ const history = {
     img3Src: "../images/buildings/jype/ijype_full.jpg",
     img4Src: "../images/buildings/jype/img13.jpg",
     img5Src: "../images/buildings/jype/rooftop.jpg",
+    bandLogo1Src: "../images/bands/jype/bandLogo1.png",
+    bandLogo2Src: "../images/bands/jype/bandLogo2.png",
+    bandLogo3Src: "../images/bands/jype/bandLogo3.png",
+    bandLogo4Src: "../images/bands/jype/bandLogo4.png",
+    bandLogo5Src: "../images/bands/jype/bandLogo5.png",
   },
 };
 
@@ -94,4 +114,9 @@ $(document).ready(() => {
   // $("#building-img3").attr("src", buildingData.img3Src);
   // $("#building-img4").attr("src", buildingData.img4Src);
   $("#building-img5").attr("src", buildingData.img5Src);
+  $("#band-logo1").attr("src", buildingData.bandLogo1Src);
+  $("#band-logo2").attr("src", buildingData.bandLogo2Src);
+  $("#band-logo3").attr("src", buildingData.bandLogo3Src);
+  $("#band-logo4").attr("src", buildingData.bandLogo4Src);
+  $("#band-logo5").attr("src", buildingData.bandLogo5Src);
 });

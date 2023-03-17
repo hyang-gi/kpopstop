@@ -192,6 +192,20 @@ body {
   width: 45%;
 }
 
+.logo-container {
+  font-size: 1.25rem;
+  padding: 2rem 6rem 2rem 6rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.band-logo {
+  width: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Footer container */
 .footer {
   margin-top: auto;
