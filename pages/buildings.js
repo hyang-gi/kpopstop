@@ -96,12 +96,37 @@ const gallery = {
   },
 };
 
+const navLinks = {
+  history: "./buildingHistory.html?id=",
+  gallery: "./buildingGallery.html?id=",
+  location: "./buildingLocation.html?id=",
+}
+
 $(document).ready(() => {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const id = urlParams.get('id');
   const buildingData = history[id];
   console.log(buildingData);
+  $("#secondary-nav-history").attr("href", navLinks.history + id);
+  $("#secondary-nav-gallery").attr("href", navLinks.gallery + id);
+  $("#secondary-nav-location").attr("href", navLinks.location + id);
+
+  var button = $(".secondary-nav-button");
+  button.hover(
+    //on mouse hover, the colour changes to building primary
+    function () {
+      $(this).css('color', `var(--${id})`);
+      $(this).css('border', `2px solid var(--${id})`);
+
+    },
+    //on mouse leaving, colour goes back to original
+    function () {
+      $(this).css('color', '');
+      $(this).css('border', '');
+    }
+  );
+
   $(".building-img").attr("src", buildingData.img1Src);
   $(".title").text(buildingData.title).css("color", `var(--${id})`);
   $(".titleText1").text(buildingData.titleText1);
