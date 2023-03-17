@@ -130,19 +130,19 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-#hybe a:hover {
+#hybe, #hybe a:hover {
   color: var(--hybe);
 }
 
-#sme a:hover {
+#sme, #sme a:hover {
   color: var(--sme);
 }
 
-#yge a:hover {
+#yge, #yge a:hover {
   color: var(--yge);
 }
 
-#jype a:hover {
+#jype, #jype a:hover {
   color: var(--jype);
 }
 
@@ -155,6 +155,22 @@ body {
   width: 100%;
 }
 
+/* Building container */
+
+.building-container {
+  padding: 0rem 6rem 2rem 6rem;
+  display: flex;
+}
+
+.building-img {
+  width: 50%;
+  height: 25%;
+}
+
+.building-text .title {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
 
 /* Footer container */
 .footer {
