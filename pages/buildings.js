@@ -1,4 +1,4 @@
-var history = {
+const history = {
   hybe: {
     upperText: "Lorem ipsum",
     middleText: "Lorem ipsum",
@@ -30,5 +30,24 @@ var history = {
     uppperImageSrc: "",
     middleImageSrc: "",
     lowerImageSrc: "",
+  },
+};
+
+var gallery = {
+  hybe: {
+    imageSrcs: [],
+    text: [],
+  },
+  yg: {
+    imageSrcs: [],
+    text: [],
+  },
+  sm: {
+    imageSrcs: [],
+    text: [],
+  },
+  jyp: {
+    imageSrcs: [],
+    text: [],
   },
 };
