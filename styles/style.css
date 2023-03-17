@@ -158,8 +158,11 @@ body {
 /* Building container */
 
 .building-container {
+  font-size: 1.25rem;
   padding: 0rem 6rem 2rem 6rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .building-img {
@@ -170,6 +173,23 @@ body {
 .building-text .title {
   font-size: 2.5rem;
   padding-bottom: 1rem;
+}
+
+.building-text .heading1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.heading1Text {
+  padding-bottom: 1rem;
+}
+
+#building-img2 {
+  width: 25%;
+}
+
+#building-img3, #building-img4, #building-img5 {
+  width: 45%;
 }
 
 /* Footer container */
