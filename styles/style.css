@@ -72,7 +72,7 @@ body {
 .secondary-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 6rem 1rem 6rem;
+  padding: 1rem 6rem 2.5rem 6rem;
 }
 
 .secondary-nav-button {
