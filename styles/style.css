@@ -38,7 +38,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
   font-size: 20px;
 }
 
@@ -72,7 +71,7 @@ body {
 .secondary-nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 6rem 2.5rem 6rem;
+  padding: 0rem 6rem 2.5rem 6rem;
 }
 
 .secondary-nav-button {

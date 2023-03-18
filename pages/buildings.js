@@ -112,20 +112,33 @@ $(document).ready(() => {
   $("#secondary-nav-gallery").attr("href", navLinks.gallery + id);
   $("#secondary-nav-location").attr("href", navLinks.location + id);
 
+  function addActiveClass() {
+    $(this).css('color', `var(--${id})`);
+    $(this).css('border', `2px solid var(--${id})`);
+  }
+
   var button = $(".secondary-nav-button");
+  const hasActiveClass = $('.secondary-nav-button').hasClass('active');
   button.hover(
     //on mouse hover, the colour changes to building primary
-    function () {
-      $(this).css('color', `var(--${id})`);
-      $(this).css('border', `2px solid var(--${id})`);
-
-    },
+    addActiveClass,
     //on mouse leaving, colour goes back to original
     function () {
       $(this).css('color', '');
       $(this).css('border', '');
     }
   );
+
+  if (hasActiveClass) {
+    $(".active").css('color', `var(--${id})`);
+    $(".active").css('border', `2px solid var(--${id})`);
+    $(".active").hover(
+      addActiveClass,
+      //on mouse leaving, colour remains active for active url
+      addActiveClass
+    );
+  }
+
 
   $(".building-img").attr("src", buildingData.img1Src);
   $(".title").text(buildingData.title).css("color", `var(--${id})`);
