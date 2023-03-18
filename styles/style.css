@@ -24,6 +24,11 @@ body {
   flex-direction: column;
 }
 
+/* long-text class added to lengthy text content for easy reading */
+.long-text {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 /* Additional divs created by tempplates */
 
 #header, #footer {
