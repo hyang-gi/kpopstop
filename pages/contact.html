@@ -59,9 +59,7 @@
 
 
     .contact-container {
-        border-width: thin;
-        border-color: #F2F2F2;
-        border-style: solid;
+        border: thin solid #F2F2F2;
         padding: 2rem;
         width: 80%;
         margin: 1rem auto;
@@ -70,7 +68,7 @@
     .content {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .left-side {
@@ -94,12 +92,12 @@
         font-size: 2rem;
         text-align: center;
         font-weight: 200;
-        color: #ffffff;
+        color: #F2F2F2;
         padding-bottom: 0.6rem;
     }
 
     .input-box {
-        border-color: #ffffff;
+        border-color: #F2F2F2;
         border-style: solid;
         height: 3.7rem;
         width: 100%;
@@ -113,7 +111,7 @@
         border: none;
         outline: none;
         font-size: 1rem;
-        color: #fff;
+        color: #F2F2F2;
         background: #0E1114;
         padding: 0 1rem;
         resize: none;
@@ -121,7 +119,6 @@
 
     .message-box {
         min-height: 25rem;
-        min-width: 25rem;
     }
 
     .input-box textarea {
@@ -135,10 +132,10 @@
         justify-content: center;
         padding: 1rem 6rem 1rem 6rem;
         margin: 1.5rem auto;
-        color: #fff;
+        color: #0E1114;
         font-size: 1rem;
-        border: 2px solid #A3E7FC;
-        background: #0E1114;
+        background: #F2F2F2;
+        border: none;
         width: calc(33.33% - 2rem);
         text-decoration: none;
         cursor: pointer;
@@ -146,7 +143,8 @@
     }
 
     .contact-button:hover {
-        color: #A3E7FC;
+        color: #0E1114;
+        background: #A3E7FC;
     }
 
 </style>
