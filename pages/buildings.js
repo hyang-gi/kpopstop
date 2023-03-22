@@ -17,8 +17,17 @@ const history = {
     bandLogo3Src: "../images/bands/hybe/bandLogo3.png",
     bandLogo4Src: "../images/bands/hybe/bandLogo4.png",
     bandLogo5Src: "../images/bands/hybe/bandLogo5.png",
+    galleryImage1Src: "../images/buildings/hybe/g0_oldBuilding.jpg",
+    galleryImage2Src: "../images/buildings/hybe/g1_bts.png",
+    galleryImage3Src: "../images/buildings/hybe/img5.jpg",
+    galleryImage4Src: "../images/buildings/hybe/img10.png",
+    galleryImage5Src: "../images/buildings/hybe/img11.png",
+    galleryImage6Src: "../images/buildings/hybe/img12.png",
+    galleryImage7Src: "../images/buildings/hybe/img13.jpg",
+    galleryImage8Src: "../images/buildings/hybe/img4.jpg",
+    galleryImage9Src: "../images/buildings/hybe/img2.jpg",
   },
-  yge: {
+ yge: {
     title: "YG Entertainment",
     titleText1: `YG Entertainment is a South Korean multinational entertainment agency established in 1996 by Yang Hyun-suk. It is considered one of the top four entertainment companies in South Korea and the K-pop company who was at the forefront of the popularisation of hip-hop music in South Korea with its mega popular groups Big Bang and 2NE1. Currently, the company is most known internationally for being the managing company of the super famous group Blackpink.`,
     titleText2: `YG Entertainment is known for being the company that debuted and managed many popular and influential South Korean K-pop groups and artists such as Epik High, Gummy, Seven, 2NE1, Psy, CL, Lee Hi, and iKON. The company is currently home to very popular groups such as Big Bang, Akdong Musician, Winner, Blackpink, and Treasure. Other notable artists also include Jeon Somi, who is under YG Entertainment's subsidiary The Black Label.`,
@@ -36,6 +45,15 @@ const history = {
     bandLogo3Src: "../images/bands/yge/bandLogo3.png",
     bandLogo4Src: "../images/bands/yge/bandLogo4.png",
     bandLogo5Src: "../images/bands/yge/bandLogo5.png",
+    galleryImage1Src: "../images/buildings/yge/img4.jpg",
+    galleryImage2Src: "../images/buildings/yge/g1_dance.jpg",
+    galleryImage3Src: "../images/buildings/yge/img11.jpg",
+    galleryImage4Src: "../images/buildings/yge/img12.jpg",
+    galleryImage5Src: "../images/buildings/yge/img13.jpg",
+    galleryImage6Src: "../images/buildings/yge/img14.jpg",
+    galleryImage7Src: "../images/buildings/yge/img15.jpg",
+    galleryImage8Src: "../images/buildings/yge/img9.jpg",
+    galleryImage9Src: "../images/buildings/yge/img1.jpg",
   },
   sme: {
     title: "SM Entertainment",
@@ -55,6 +73,15 @@ const history = {
     bandLogo3Src: "../images/bands/sme/bandLogo3.png",
     bandLogo4Src: "../images/bands/sme/bandLogo4.png",
     bandLogo5Src: "../images/bands/sme/bandLogo5.png",
+    galleryImage1Src: "../images/buildings/sme/img7.jpg",
+    galleryImage2Src: "../images/buildings/sme/exo_dance.jpg",
+    galleryImage3Src: "../images/buildings/sme/sm_building.jpg",
+    galleryImage4Src: "../images/buildings/sme/img3.jpg",
+    galleryImage5Src: "../images/buildings/sme/img4.jpg",
+    galleryImage6Src: "../images/buildings/sme/img5.jpg",
+    galleryImage7Src: "../images/buildings/sme/img6.jpg",
+    galleryImage8Src: "../images/buildings/sme/img14.jpg",
+    galleryImage9Src: "../images/buildings/sme/img12.jpg",
   },
   jype: {
     title: "JYP Entertainment",
@@ -74,6 +101,15 @@ const history = {
     bandLogo3Src: "../images/bands/jype/bandLogo3.png",
     bandLogo4Src: "../images/bands/jype/bandLogo4.png",
     bandLogo5Src: "../images/bands/jype/bandLogo5.png",
+    galleryImage1Src: "../images/buildings/jype/2pm_dance.png",
+    galleryImage2Src: "../images/buildings/jype/nmix_dance.png",
+    galleryImage3Src: "../images/buildings/jype/g3_basement.png",
+    galleryImage4Src: "../images/buildings/jype/g4_bandroom.png",
+    galleryImage5Src: "../images/buildings/jype/g6_canteen.png",
+    galleryImage6Src: "../images/buildings/jype/g7_corridor.png",
+    galleryImage7Src: "../images/buildings/jype/g8_musicFactory.png",
+    galleryImage8Src: "../images/buildings/jype/g9_room.png",
+    galleryImage9Src: "../images/buildings/jype/g10_musicRoom.png",
   },
 };
 
@@ -149,12 +185,22 @@ $(document).ready(() => {
   $(".heading1Text").text(buildingData.heading1Text);
   $(".heading2Text").text(buildingData.heading2Text);
   $(".heading3Text").text(buildingData.heading3Text);
-  // $("#building-img3").attr("src", buildingData.img3Src);
-  // $("#building-img4").attr("src", buildingData.img4Src);
   $("#building-img5").attr("src", buildingData.img5Src);
   $("#band-logo1").attr("src", buildingData.bandLogo1Src);
   $("#band-logo2").attr("src", buildingData.bandLogo2Src);
   $("#band-logo3").attr("src", buildingData.bandLogo3Src);
   $("#band-logo4").attr("src", buildingData.bandLogo4Src);
   $("#band-logo5").attr("src", buildingData.bandLogo5Src);
+  $(".image-container img").css('border', `2px solid var(--${id})`);
+  $(".image-container2 img").css('border', `2px solid var(--${id})`);
+  $(".image-container3 img").css('border', `2px solid var(--${id})`);
+  $("#gallery-image1").attr("src", buildingData.galleryImage1Src);
+  $("#gallery-image2").attr("src", buildingData.galleryImage2Src);
+  $(".gallery-image3").attr("src", buildingData.galleryImage3Src);
+  $("#gallery-image4").attr("src", buildingData.galleryImage4Src);
+  $("#gallery-image5").attr("src", buildingData.galleryImage5Src);
+  $("#gallery-image6").attr("src", buildingData.galleryImage6Src);
+  $("#gallery-image7").attr("src", buildingData.galleryImage7Src);
+  $("#gallery-image8").attr("src", buildingData.galleryImage8Src);
+  $("#gallery-image9").attr("src", buildingData.galleryImage9Src);
 });
