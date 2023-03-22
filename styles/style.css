@@ -24,7 +24,7 @@ body {
   flex-direction: column;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 1279px) {
   .header {
     padding: 1rem 6rem 1rem 6rem;
   }
@@ -54,7 +54,8 @@ body {
 
 /* Additional divs created by tempplates */
 
-#header, #footer {
+#header,
+#footer {
   padding: 0rem;
   margin: 0rem;
 }
@@ -146,19 +147,23 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-#hybe, #hybe a:hover {
+#hybe,
+#hybe a:hover {
   color: var(--hybe);
 }
 
-#sme, #sme a:hover {
+#sme,
+#sme a:hover {
   color: var(--sme);
 }
 
-#yge, #yge a:hover {
+#yge,
+#yge a:hover {
   color: var(--yge);
 }
 
-#jype, #jype a:hover {
+#jype,
+#jype a:hover {
   color: var(--jype);
 }
 
@@ -204,7 +209,9 @@ body {
   max-width: 25%;
 }
 
-#building-img3, #building-img4, #building-img5 {
+#building-img3,
+#building-img4,
+#building-img5 {
   max-width: 45%;
 }
 
