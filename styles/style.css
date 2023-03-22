@@ -182,7 +182,7 @@ body {
 }
 
 .building-img {
-  width: 50%;
+  max-width: 50%;
   height: 25%;
 }
 
@@ -201,11 +201,11 @@ body {
 }
 
 #building-img2 {
-  width: 25%;
+  max-width: 25%;
 }
 
 #building-img3, #building-img4, #building-img5 {
-  width: 45%;
+  max-width: 45%;
 }
 
 .logo-container {
