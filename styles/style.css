@@ -147,6 +147,10 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
+#hybe a:visited, #sme a:visited, #yge a:visited, #jype a:visited {
+  color: #F2F2F2;
+}
+
 #hybe,
 #hybe a:hover {
   color: var(--hybe);
