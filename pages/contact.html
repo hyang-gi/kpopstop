@@ -14,8 +14,184 @@
 
 <body>
     <div class="header"></div>
+
     <!-- enter code here, leave the header and footer divs as is -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="topic-text">Want to get in touch? Send us a message!</div>
+            <div class="content">
+                <div class="left-side">
+                    <form id="contact-form">
+                            <div class="input-box">
+                                <input type="text" id="subject" name="subject" placeholder="subject" required>
+                            </div>
+                            <div class="input-box">
+                                <input type="text" id="issue" name="issue" placeholder="issue" required>
+                            </div>
+                            
+                            <div class="input-box">
+                                <input type="email" id="email" name="email" placeholder="email" required>
+                            </div>
+                            <button type="submit" class="contact-button">Submit</button>
+                    </form>
+                </div>
+                <div class="right-side">
+                    <div class="details">
+                        <div class="input-box message-box">
+                            <textarea id="message" name="message"placeholder="enter your message" required></textarea>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <div class="footer"></div>
 </body>
+
+<style>
+    .contact-section {
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 100px auto;
+    }
+
+
+    .contact-container {
+        border-width: thin;
+        border-color: #ffffff;
+        border-style: solid;
+        padding: 40px 70px 30px 30px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left-side {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .details {
+        margin: 14px;
+        text-align: center;
+    }
+
+
+    .right-side {
+        width: 55%;
+    }
+
+    .topic-text {
+        font-size: 35px;
+        text-align: center;
+        font-weight: 200;
+        color: #ffffff;
+        padding-bottom: 10px;
+    }
+
+    .input-box {
+        border-radius: 10px;
+        border-color: #ffffff;
+        border-style: solid;
+        height: 60px;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .input-box input, textarea {
+
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        color: #fff;
+        background: #0E1114;
+        border-radius: 10px;
+        padding: 0 15px;
+        resize: none;
+    }
+
+    .message-box {
+        min-height: 400px;
+        min-width: 400px;
+    }
+
+    .input-box textarea {
+        padding-top: 6px;
+        width: 100%;
+    }
+
+    .contact-button {
+        display: inline-block;
+        margin-top: 12px;
+        margin-left: 20px;
+        color: #fff;
+        font-size: 30px;
+        outline: none;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        border-style: solid;
+        border-color: #A3E7FC;
+        background: #0E1114;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .contact-button:hover {
+        background: #A3E7FC;
+        border: none;
+        color: #0E1114;
+    }
+
+</style>
+
+<script>
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const subject = document.getElementById('subject').value;
+        const issue = document.getElementById('issue').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        const data = {
+            service_id: 'service_utrdsa9',
+            template_id: 'template_gfayp1a',
+            user_id: 'fEA7iaGKWkAPqsVg6',
+            template_params: {
+            subject,
+            issue,
+            email,
+            message,
+            },
+        };
+
+        fetch('https://api.emailjs.com/api/v1.0/email/send', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        })
+        .then(() => {
+        alert('Your message has been sent!');
+        form.reset();
+        })
+        .catch((error) => {
+        alert(`Error: ${error}`);
+        });
+    });
+</script>
 
 </html>
