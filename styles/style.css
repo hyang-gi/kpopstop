@@ -24,6 +24,29 @@ body {
   flex-direction: column;
 }
 
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: 1rem 6rem 1rem 6rem;
+  }
+
+  .header .top-bar .primary-nav {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 10rem;
+    height: 2rem;
+  }
+
+  .companies-container {
+    display: block !important;
+  }
+
+  .company-block-photo {
+    width: 200% !important;
+  }
+}
+
 /* long-text class added to lengthy text content for easy reading */
 .long-text {
   font-family: Helvetica, Arial, sans-serif;
