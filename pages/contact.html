@@ -23,14 +23,14 @@
                 <div class="left-side">
                     <form id="contact-form">
                             <div class="input-box">
-                                <input type="text" id="subject" name="subject" placeholder="subject" required>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
                             </div>
                             <div class="input-box">
-                                <input type="text" id="issue" name="issue" placeholder="issue" required>
+                                <input type="text" id="issue" name="issue" placeholder="Issue" required>
                             </div>
                             
                             <div class="input-box">
-                                <input type="email" id="email" name="email" placeholder="email" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
                             </div>
                             <button type="submit" class="contact-button">Submit</button>
                     </form>
@@ -38,7 +38,7 @@
                 <div class="right-side">
                     <div class="details">
                         <div class="input-box message-box">
-                            <textarea id="message" name="message"placeholder="enter your message" required></textarea>
+                            <textarea id="message" name="message"placeholder="Enter your message" required></textarea>
                         </div>
                     </div>                  
                 </div>
@@ -54,15 +54,17 @@
         position: relative;
         overflow: hidden;
         white-space: nowrap;
-        margin: 100px auto;
+        padding: 2rem;
     }
 
 
     .contact-container {
         border-width: thin;
-        border-color: #ffffff;
+        border-color: #F2F2F2;
         border-style: solid;
-        padding: 40px 70px 30px 30px;
+        padding: 2rem;
+        width: 80%;
+        margin: 1rem auto;
     }
 
     .content {
@@ -74,15 +76,12 @@
     .left-side {
         width: 45%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         position: relative;
+        padding: 3rem;
     }
 
     .details {
-        margin: 14px;
+        margin: 0.9rem;
         text-align: center;
     }
 
@@ -92,66 +91,62 @@
     }
 
     .topic-text {
-        font-size: 35px;
+        font-size: 2rem;
         text-align: center;
         font-weight: 200;
         color: #ffffff;
-        padding-bottom: 10px;
+        padding-bottom: 0.6rem;
     }
 
     .input-box {
-        border-radius: 10px;
         border-color: #ffffff;
         border-style: solid;
-        height: 60px;
+        height: 3.7rem;
         width: 100%;
-        margin: 20px 0;
+        margin: 1.25rem 0;
     }
     
     .input-box input, textarea {
 
         height: 100%;
+        width: 100%;
         border: none;
         outline: none;
-        font-size: 18px;
+        font-size: 1rem;
         color: #fff;
         background: #0E1114;
-        border-radius: 10px;
-        padding: 0 15px;
+        padding: 0 1rem;
         resize: none;
     }
 
     .message-box {
-        min-height: 400px;
-        min-width: 400px;
+        min-height: 25rem;
+        min-width: 25rem;
     }
 
     .input-box textarea {
-        padding-top: 6px;
+        padding-top: 1rem;
         width: 100%;
     }
 
     .contact-button {
-        display: inline-block;
-        margin-top: 12px;
-        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 6rem 1rem 6rem;
+        margin: 1.5rem auto;
         color: #fff;
-        font-size: 30px;
-        outline: none;
-        border: none;
-        padding: 8px 16px;
-        border-radius: 6px;
-        border-style: solid;
-        border-color: #A3E7FC;
+        font-size: 1rem;
+        border: 2px solid #A3E7FC;
         background: #0E1114;
+        width: calc(33.33% - 2rem);
+        text-decoration: none;
         cursor: pointer;
         transition: all 0.3s ease;
     }
 
     .contact-button:hover {
-        background: #A3E7FC;
-        border: none;
-        color: #0E1114;
+        color: #A3E7FC;
     }
 
 </style>
