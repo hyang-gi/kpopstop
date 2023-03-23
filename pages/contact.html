@@ -1,88 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Contact</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../main.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="header"></div>
+    
     <section class="contact-section">
-        <div class="contact-container">
-            <div class="topic-text">Want to get in touch? Send us a message!</div>
-            <div class="content">
-                <div class="left-side">
-                    <form id="contact-form">
-                        <div class="input-box">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="input-box">
-                            <input type="text" id="issue" name="issue" placeholder="Issue" required>
-                        </div>
-
-                        <div class="input-box">
-                            <input type="email" id="email" name="email" placeholder="Email" required>
-                        </div>
-                        <button type="submit" class="contact-button">Submit</button>
-                    </form>
-                </div>
-                <div class="right-side">
-                    <div class="details">
-                        <div class="input-box message-box">
-                            <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                        </div>
-                    </div>
-                </div>
+      <div class="contact-container">
+        <div class="topic-text">Want to get in touch? Send us a message!</div>
+        <div class="content">
+          <div class="left-side">
+            <form id="contact-form">
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Enter your subject*"
+                  required
+                />
+              </div>
+              <div class="input-box">
+                <select id="issue" name="issue">
+                  <option>Select an issue*</option>
+                  <option>Links not working</option>
+                  <option>Accessibility problem</option>
+                  <option>Location map not working</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="input-box">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email*"
+                  required
+                />
+              </div>
+              <button type="submit" class="contact-button">Submit</button> 
+            </form>
+          </div>
+          <div class="right-side">
+            <div class="details">
+              <div class="input-box message-box">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message..."
+                  required
+                ></textarea>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <div class="footer"></div>
-</body>
+  </body>
 
-<script>
-    const form = document.getElementById('contact-form');
+  <style>
+    select {
+        height: 100%;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        color: #F2F2F2;
+        background: #0E1114;
+        padding: 0 1rem;
+        resize: none;
+    }
 
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
+    ::placeholder {
+      color: #F2F2F2;
+    }
+  </style>
 
-        const subject = document.getElementById('subject').value;
-        const issue = document.getElementById('issue').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
+  <script>
+    const form = document.getElementById("contact-form");
 
-        const data = {
-            service_id: 'service_utrdsa9',
-            template_id: 'template_gfayp1a',
-            user_id: 'fEA7iaGKWkAPqsVg6',
-            template_params: {
-                subject,
-                issue,
-                email,
-                message,
-            },
-        };
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
 
-        fetch('https://api.emailjs.com/api/v1.0/email/send', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data),
+      const subject = document.getElementById("subject").value;
+      const issue = document.getElementById("issue").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const data = {
+        service_id: "service_utrdsa9",
+        template_id: "template_gfayp1a",
+        user_id: "fEA7iaGKWkAPqsVg6",
+        template_params: {
+          subject,
+          issue,
+          email,
+          message,
+        },
+      };
+
+      fetch("https://api.emailjs.com/api/v1.0/email/send", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      })
+        .then(() => {
+          alert("Your message has been sent!");
+          form.reset();
         })
-            .then(() => {
-                alert('Your message has been sent!');
-                form.reset();
-            })
-            .catch((error) => {
-                alert(`Error: ${error}`);
-            });
+        .catch((error) => {
+          alert(`Error: ${error}`);
+        });
     });
-</script>
 
+    input.onfocus = function () {
+      browsers.style.display = "block";
+      input.style.borderRadius = "5px 5px 0 0";
+    };
+    for (let option of browsers.options) {
+      option.onclick = function () {
+        input.value = option.value;
+        browsers.style.display = "none";
+        input.style.borderRadius = "5px";
+      };
+    }
+  </script>
 </html>

@@ -332,6 +332,7 @@ body {
   height: 3.7rem;
   width: 100%;
   margin: 1.25rem 0;
+  padding: 0.5rem;
 }
 
 .input-box input,
@@ -355,6 +356,7 @@ textarea {
 .input-box textarea {
   padding-top: 1rem;
   width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .contact-button {
@@ -364,13 +366,14 @@ textarea {
   padding: 1rem 6rem 1rem 6rem;
   margin: 1.5rem auto;
   color: #0E1114;
-  font-size: 1rem;
+  font-size: 1.2rem;
   background: #F2F2F2;
   border: none;
   width: calc(33.33% - 2rem);
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
 }
 
 .contact-button:hover {
