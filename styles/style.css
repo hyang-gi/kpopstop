@@ -332,6 +332,7 @@ body {
   height: 3.7rem;
   width: 100%;
   margin: 1.25rem 0;
+  padding: 0.5rem;
 }
 
 .input-box input,
@@ -355,6 +356,7 @@ textarea {
 .input-box textarea {
   padding-top: 1rem;
   width: 100%;
+  font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
 }
 
 .contact-button {
