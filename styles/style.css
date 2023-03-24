@@ -324,18 +324,10 @@ body {
   text-align: center;
 }
 
-
 .right-side {
   width: 55%;
 }
 
-.topic-text {
-  font-size: 2rem;
-  text-align: center;
-  font-weight: 200;
-  color: #F2F2F2;
-  padding-bottom: 0.6rem;
-}
 
 .input-box {
   border-color: #F2F2F2;
