@@ -52,6 +52,14 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+.content-title {
+  display: block;
+  font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  color: #A3E7FC;
+}
+
 /* Additional divs created by tempplates */
 
 #header,
@@ -147,7 +155,10 @@ body {
   transition: color 0.2s ease-in-out;
 }
 
-#hybe a:visited, #sme a:visited, #yge a:visited, #jype a:visited {
+#hybe a:visited,
+#sme a:visited,
+#yge a:visited,
+#jype a:visited {
   color: #F2F2F2;
 }
 
@@ -381,6 +392,33 @@ textarea {
   background: #A3E7FC;
 }
 
+/* Aboout Us Styles */
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: justify;
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-bottom: 5rem;
+  font-family: "HelveticaNeue", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.teamshot-container {
+  text-align: justify;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.teamshot img {
+  max-width: 40%;
+  margin-bottom: 2rem;
+  margin-left: 19.5rem;
+  margin-right: 19.5rem;
+}
+
 /* Footer container */
 .footer {
   margin-top: auto;
@@ -430,4 +468,3 @@ textarea {
   padding-left: 2rem;
   padding-top: 2rem;
 }
-
