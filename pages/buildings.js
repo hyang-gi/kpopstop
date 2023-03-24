@@ -28,7 +28,7 @@ const history = {
     galleryImage9Src: "../images/buildings/hybe/img2.jpg",
     mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.302307309309!2d126.95969162555623!3d37.52437046972386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1adbde4193d%3A0xb66b720a6871a40a!2sHYBE%20HQ!5e0!3m2!1sen!2sie!4v1679500864734!5m2!1sen!2sie"
   },
- yge: {
+  yge: {
     title: "YG Entertainment",
     titleText1: `YG Entertainment is a South Korean multinational entertainment agency established in 1996 by Yang Hyun-suk. It is considered one of the top four entertainment companies in South Korea and the K-pop company who was at the forefront of the popularisation of hip-hop music in South Korea with its mega popular groups Big Bang and 2NE1. Currently, the company is most known internationally for being the managing company of the super famous group Blackpink.`,
     titleText2: `YG Entertainment is known for being the company that debuted and managed many popular and influential South Korean K-pop groups and artists such as Epik High, Gummy, Seven, 2NE1, Psy, CL, Lee Hi, and iKON. The company is currently home to very popular groups such as Big Bang, Akdong Musician, Winner, Blackpink, and Treasure. Other notable artists also include Jeon Somi, who is under YG Entertainment's subsidiary The Black Label.`,
