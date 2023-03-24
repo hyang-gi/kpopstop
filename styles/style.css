@@ -112,6 +112,10 @@ body {
   color: var(--primary);
 }
 
+.menu-item a:visited {
+  color: #f2f2f2;
+}
+
 /* Secondary Navbar for buildings page */
 
 .secondary-nav {
