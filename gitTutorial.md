@@ -29,15 +29,15 @@
 
 ### How to push changes
 
-Note: Before making change, make sure you have the [latest version](#how-to-pull) of the repository 
+**Note:** Before making change, make sure you have the [latest version](#how-to-pull) of the repository 
 
 1. Modify your files
 2. Use `git status` to check the list of modified files
 3. To stage the changes (ie. add them to be pushed to the repository from local), use `git add <file_name.extension`
 4. To add all files, use `git add .`
-5. To add a message (describe the changes very briefly so that your fellow developers can understand the context too), use `git commit -m <changes_described_here>`
+5. To add a message (describe the changes very briefly so that your fellow developers can understand the context too), use `git commit -m "<changes_described_here>"`
 6. To move your changes from local to the main branch, use `git push origin <branch_name>`
-7. If your local branch is always the same, use `git push --set-upstream origin <branch_name>`. (Next time just use `git push`)
+7. If your local branch is **always** the same, use `git push --set-upstream origin <branch_name>`. (Next time just use `git push`)
 
 
 ### Create a Pull Request
