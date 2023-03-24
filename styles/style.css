@@ -422,6 +422,181 @@ textarea {
   text-align: left;
 }
 
+/* Tours Styles */
+
+.filter-container {
+  position: relative;
+  left: 10%;
+  display: inline-block;
+  width: 10%;
+  display: flex;
+}
+
+.filter-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-label {
+  display: block;
+  font-weight: normal;
+  margin-left: 5px;
+  float: left;
+  width: 0;
+}
+
+.filter-selected {
+  display: block;
+  padding-left: 2rem;
+}
+
+.filter-icon {
+  display: block;
+  font-size: 12px;
+  transition: transform 0.2s ease-in-out;
+  float: right;
+}
+
+.filter-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  background-color: hsl(0, 0%, 0%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.filter-option {
+  display: flex;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.filter-option:hover {
+  background-color: #7e7e7e;
+}
+
+.filter-option.disabled {
+  color: var(--primary);
+  cursor: default;
+}
+
+.filter-options.show {
+  display: block;
+}
+
+.filter-icon.rotate {
+  transform: rotate(180deg);
+}
+
+#tour-list {
+  height: auto;
+  padding: 2% 10%;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#tour-list li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 50%;
+}
+
+#tour-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  text-decoration: none;
+  cursor: default;
+}
+
+.tours-image-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer
+}
+
+.tours-image-container img {
+  width: 95%;
+  height: 40vh;
+  display: block;
+}
+
+.title-container {
+  margin-top: 1vh;
+  float: left;
+  cursor: pointer
+}
+
+.tour-title {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 100%;
+  color: #F2F2F2;
+}
+
+.agency {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5vh;
+}
+
+.tag-hybe {
+  background-color: var(--hybe);
+  color: #F2F2F2;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.tag-jyp {
+  background-color: var(--jype);
+  color: #F2F2F2;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.tag-sm {
+  background-color: var(--sme);
+  color: #F2F2F2;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.tag-yg {
+  background-color: var(--yge);
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  color: #F2F2F2;
+}
+
 /* Terms & Conditions */
 .terms-container {
   margin: 3% 20% 3% 20%;
