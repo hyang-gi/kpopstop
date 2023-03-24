@@ -412,11 +412,18 @@ textarea {
   margin-bottom: 2rem;
 }
 
+.teamshot {
+  text-align: center;
+}
+
 .teamshot img {
+  display: inline-block;
   max-width: 40%;
   margin-bottom: 2rem;
-  margin-left: 19.5rem;
-  margin-right: 19.5rem;
+}
+
+.teamshot p {
+  text-align: left;
 }
 
 /* Terms & Conditions */
