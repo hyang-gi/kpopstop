@@ -112,7 +112,7 @@ const history = {
     galleryImage6Src: "../images/buildings/jype/g7_corridor.png",
     galleryImage7Src: "../images/buildings/jype/g8_musicFactory.png",
     galleryImage8Src: "../images/buildings/jype/g9_room.png",
-    galleryImage9Src: "../images/buildings/jype/g10_musicRoom.png",
+    galleryImage9Src: "../images/buildings/jype/g5_terrace.png",
     mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3142909763856!2d127.12691871491091!3d37.5240879343164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca47a55555555%3A0x83f404863f3fb36a!2sJYP%20ENTERTAINMENT!5e0!3m2!1sen!2sie!4v1679501432265!5m2!1sen!2sie",
   },
 };
