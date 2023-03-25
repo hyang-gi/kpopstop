@@ -14,7 +14,7 @@
 
 /* Global styles */
 body {
-  font-family: "HelveticaNeue-CondensedBold", Oswald, Helvetica, sans-serif;
+  font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #0E1114;
@@ -54,7 +54,7 @@ body {
 
 .content-title {
   display: block;
-  font-family: "HelveticaNeue-CondensedBold", Oswald, Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 2rem;
   color: #A3E7FC;
@@ -380,7 +380,7 @@ textarea {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: "HelveticaNeue-CondensedBold", Oswald, Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
 .contact-button:hover {

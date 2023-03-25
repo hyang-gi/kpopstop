@@ -14,7 +14,7 @@
 
       .cls-2 {
         fill: #fff;
-        font-family: HelveticaNeue-CondensedBold, 'Helvetica Neue';
+        font-family: HelveticaNeue-CondensedBold, 'Roboto Condensed', 'Helvetica Neue';
         font-size: 152.2px;
         font-weight: 700;
       }
