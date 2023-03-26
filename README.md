@@ -1,9 +1,11 @@
+
 # Web Accessibility Project Group 6: kpopstop
 #### Group Members: Gillian, Molly, Nikhat, Wesley, Zaynab
 
 ## Assignment Brief
 
 Design and develop an accessible web site using valid HTML5 and CSS3. The function of the web site is to deliver information about a specific building or buildings to a specific audience. 
+
 
 ### Deliverables
 

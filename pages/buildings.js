@@ -17,6 +17,11 @@ const history = {
     bandLogo3Src: "../images/bands/hybe/bandLogo3.png",
     bandLogo4Src: "../images/bands/hybe/bandLogo4.png",
     bandLogo5Src: "../images/bands/hybe/bandLogo5.png",
+    galleryText: `From when the company was named Big Hit Entertainment and was located in another location, HYBE has been an active spot for fans, especially ARMYs because of their nostalgic association of BTS' trainee days. 
+    The old building's wall is engraved with signs to commemorate the band. The new building which parallels the growth 
+    of the company has extensive dance practice rooms. Dance practice rooms are an important part of the kpop experience as idols share their progress and
+    updates with their fans virtually. Along with various rooms dedicated to the idols, the building sports moveable meeting rooms, cafeteria, and more details are listed in the layout plans
+    of the building.`,
     galleryImage1Src: "../images/buildings/hybe/g0_oldBuilding.jpg",
     galleryImage2Src: "../images/buildings/hybe/g1_bts.png",
     galleryImage3Src: "../images/buildings/hybe/img5.jpg",
@@ -28,7 +33,7 @@ const history = {
     galleryImage9Src: "../images/buildings/hybe/img2.jpg",
     mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.302307309309!2d126.95969162555623!3d37.52437046972386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1adbde4193d%3A0xb66b720a6871a40a!2sHYBE%20HQ!5e0!3m2!1sen!2sie!4v1679500864734!5m2!1sen!2sie"
   },
- yge: {
+  yge: {
     title: "YG Entertainment",
     titleText1: `YG Entertainment is a South Korean multinational entertainment agency established in 1996 by Yang Hyun-suk. It is considered one of the top four entertainment companies in South Korea and the K-pop company who was at the forefront of the popularisation of hip-hop music in South Korea with its mega popular groups Big Bang and 2NE1. Currently, the company is most known internationally for being the managing company of the super famous group Blackpink.`,
     titleText2: `YG Entertainment is known for being the company that debuted and managed many popular and influential South Korean K-pop groups and artists such as Epik High, Gummy, Seven, 2NE1, Psy, CL, Lee Hi, and iKON. The company is currently home to very popular groups such as Big Bang, Akdong Musician, Winner, Blackpink, and Treasure. Other notable artists also include Jeon Somi, who is under YG Entertainment's subsidiary The Black Label.`,
@@ -46,6 +51,7 @@ const history = {
     bandLogo3Src: "../images/bands/yge/bandLogo3.png",
     bandLogo4Src: "../images/bands/yge/bandLogo4.png",
     bandLogo5Src: "../images/bands/yge/bandLogo5.png",
+    galleryText: "",
     galleryImage1Src: "../images/buildings/yge/img4.jpg",
     galleryImage2Src: "../images/buildings/yge/g1_dance.jpg",
     galleryImage3Src: "../images/buildings/yge/img11.jpg",
@@ -75,6 +81,7 @@ const history = {
     bandLogo3Src: "../images/bands/sme/bandLogo3.png",
     bandLogo4Src: "../images/bands/sme/bandLogo4.png",
     bandLogo5Src: "../images/bands/sme/bandLogo5.png",
+    galleryText: "",
     galleryImage1Src: "../images/buildings/sme/img7.jpg",
     galleryImage2Src: "../images/buildings/sme/exo_dance.jpg",
     galleryImage3Src: "../images/buildings/sme/sm_building.jpg",
@@ -104,6 +111,7 @@ const history = {
     bandLogo3Src: "../images/bands/jype/bandLogo3.png",
     bandLogo4Src: "../images/bands/jype/bandLogo4.png",
     bandLogo5Src: "../images/bands/jype/bandLogo5.png",
+    galleryText: "",
     galleryImage1Src: "../images/buildings/jype/2pm_dance.png",
     galleryImage2Src: "../images/buildings/jype/nmix_dance.png",
     galleryImage3Src: "../images/buildings/jype/g3_basement.png",
@@ -112,7 +120,7 @@ const history = {
     galleryImage6Src: "../images/buildings/jype/g7_corridor.png",
     galleryImage7Src: "../images/buildings/jype/g8_musicFactory.png",
     galleryImage8Src: "../images/buildings/jype/g9_room.png",
-    galleryImage9Src: "../images/buildings/jype/g10_musicRoom.png",
+    galleryImage9Src: "../images/buildings/jype/g5_terrace.png",
     mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3142909763856!2d127.12691871491091!3d37.5240879343164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca47a55555555%3A0x83f404863f3fb36a!2sJYP%20ENTERTAINMENT!5e0!3m2!1sen!2sie!4v1679501432265!5m2!1sen!2sie",
   },
 };
@@ -176,6 +184,7 @@ $(document).ready(() => {
   $("#band-logo3").attr("src", buildingData.bandLogo3Src);
   $("#band-logo4").attr("src", buildingData.bandLogo4Src);
   $("#band-logo5").attr("src", buildingData.bandLogo5Src);
+  $(".galleryText").text(buildingData.galleryText);
   $(".image-container img").css('border', `2px solid var(--${id})`);
   $(".image-container2 img").css('border', `2px solid var(--${id})`);
   $(".image-container3 img").css('border', `2px solid var(--${id})`);
