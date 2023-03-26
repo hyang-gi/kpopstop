@@ -17,6 +17,11 @@ const history = {
     bandLogo3Src: "../images/bands/hybe/bandLogo3.png",
     bandLogo4Src: "../images/bands/hybe/bandLogo4.png",
     bandLogo5Src: "../images/bands/hybe/bandLogo5.png",
+    galleryText: `From when the company was named Big Hit Entertainment and was located in another location, HYBE has been an active spot for fans, especially ARMYs because of their nostalgic association of BTS' trainee days. 
+    The old building's wall is engraved with signs to commemorate the band. The new building which parallels the growth 
+    of the company has extensive dance practice rooms. Dance practice rooms are an important part of the kpop experience as idols share their progress and
+    updates with their fans virtually. Along with various rooms dedicated to the idols, the building sports moveable meeting rooms, cafeteria, and more details are listed in the layout plans
+    of the building.`,
     galleryImage1Src: "../images/buildings/hybe/g0_oldBuilding.jpg",
     galleryImage2Src: "../images/buildings/hybe/g1_bts.png",
     galleryImage3Src: "../images/buildings/hybe/img5.jpg",
@@ -46,6 +51,7 @@ const history = {
     bandLogo3Src: "../images/bands/yge/bandLogo3.png",
     bandLogo4Src: "../images/bands/yge/bandLogo4.png",
     bandLogo5Src: "../images/bands/yge/bandLogo5.png",
+    galleryText: "",
     galleryImage1Src: "../images/buildings/yge/img4.jpg",
     galleryImage2Src: "../images/buildings/yge/g1_dance.jpg",
     galleryImage3Src: "../images/buildings/yge/img11.jpg",
@@ -75,6 +81,7 @@ const history = {
     bandLogo3Src: "../images/bands/sme/bandLogo3.png",
     bandLogo4Src: "../images/bands/sme/bandLogo4.png",
     bandLogo5Src: "../images/bands/sme/bandLogo5.png",
+    galleryText: "",
     galleryImage1Src: "../images/buildings/sme/img7.jpg",
     galleryImage2Src: "../images/buildings/sme/exo_dance.jpg",
     galleryImage3Src: "../images/buildings/sme/sm_building.jpg",
@@ -104,6 +111,7 @@ const history = {
     bandLogo3Src: "../images/bands/jype/bandLogo3.png",
     bandLogo4Src: "../images/bands/jype/bandLogo4.png",
     bandLogo5Src: "../images/bands/jype/bandLogo5.png",
+    galleryText: "",
     galleryImage1Src: "../images/buildings/jype/2pm_dance.png",
     galleryImage2Src: "../images/buildings/jype/nmix_dance.png",
     galleryImage3Src: "../images/buildings/jype/g3_basement.png",
@@ -176,6 +184,7 @@ $(document).ready(() => {
   $("#band-logo3").attr("src", buildingData.bandLogo3Src);
   $("#band-logo4").attr("src", buildingData.bandLogo4Src);
   $("#band-logo5").attr("src", buildingData.bandLogo5Src);
+  $(".galleryText").text(buildingData.galleryText);
   $(".image-container img").css('border', `2px solid var(--${id})`);
   $(".image-container2 img").css('border', `2px solid var(--${id})`);
   $(".image-container3 img").css('border', `2px solid var(--${id})`);
