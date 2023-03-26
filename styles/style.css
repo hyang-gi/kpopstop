@@ -644,6 +644,22 @@ textarea {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Help Page */
+.qa-container {
+  padding: 2rem 18rem 4rem 18rem;
+}
+
+.qa-info {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.help-link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
 /* Footer container */
 .footer {
   margin-top: auto;
