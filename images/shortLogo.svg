@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        font-family: HelveticaNeue-CondensedBold, 'Helvetica Neue';
+        font-family: 'HelveticaNeue-CondensedBold', 'Roboto Condensed', 'Helvetica Neue';
         font-size: 112.06px;
         font-weight: 700;
         stroke-width: 2px;
