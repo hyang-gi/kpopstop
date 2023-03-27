@@ -77,34 +77,34 @@ title:"K-pop Agencies and Idol Restaurant Visit in Seoul with Guide & Transport"
 imageSrc:"../images/buildings/yge/img10.jpg"
 }
 ];
-$(document).ready(function () {
-  $(".filter-header").click(function () {
-    $(".filter-icon").toggleClass("rotate");
-    $(".filter-options").toggleClass("show");
-  });
-
-  $(".filter-option").click(function () {
-    if (!$(this).hasClass("disabled")) {
-      $(".filter-option").removeClass("disabled");
-      $(this).addClass("disabled");
-      $(".filter-selected").text($(this).text());
-      $(".filter-icon").removeClass("rotate");
-      $(".filter-options").removeClass("show");
-      const $tour_list = $("#tour-list");
-      $tour_list.empty();
-      renderList($(this).text());
-    }
-  });
-  renderList(ALL);
+$(document).ready(function() {
+$(".filter-header").click(function() {
+$(".filter-icon").toggleClass("rotate");
+$(".filter-options").toggleClass("show");
 });
-function renderList(filter) {
+
+$(".filter-option").click(function() {
+if (!$(this).hasClass("disabled")) {
+$(".filter-option").removeClass("disabled");
+$(this).addClass("disabled");
+$(".filter-selected").text($(this).text());
+$(".filter-icon").removeClass("rotate");
+$(".filter-options").removeClass("show");
+const $tour_list = $("#tour-list");
+  $tour_list.empty();
+renderList($(this).text());
+}
+});
+renderList(ALL);
+});
+function renderList(filter){
 
   var filteredTours = tours;
-  if (filter !== ALL) {
-    filteredTours = tours.filter(function (tour) {
+if(filter !== ALL){
+  filteredTours = tours.filter(function(tour){
       return tour.agency.includes(filter);
-    });
-  }
+  });
+}
 
 const $list = $("#tour-list");
 filteredTours.forEach(function(tour) {
@@ -116,17 +116,19 @@ const $titleContainer = $("<div>").addClass("title-container").appendTo($link);
 const $title = $("<div>").addClass("main-title").text(tour.title).appendTo($titleContainer);
 const $agency = $("<div>").addClass("agency").appendTo($titleContainer);
 
-    if (tour.agency.includes(HYBE)) {
-      $("<span>").text("HYBE ").addClass("tag-hybe").appendTo($agency);
-    }
-    if (tour.agency.includes(JYP)) {
-      $("<span>").text("JYP ").addClass("tag-jyp").appendTo($agency);
-    }
-    if (tour.agency.includes(SM)) {
-      $("<span>").text("SM ").addClass("tag-sm").appendTo($agency);
-    }
-    if (tour.agency.includes(YG)) {
-      $("<span>").text("YG ").addClass("tag-yg").appendTo($agency);
-    }
-  });
+if (tour.agency.includes(HYBE)) {
+$("<span>").text("HYBE ").addClass("hybe").appendTo($agency);
+}
+if (tour.agency.includes(JYP)) {
+$("<span>").text("JYP ").addClass("jyp").appendTo($agency);
+}
+if (tour.agency.includes(SM)) {
+$("<span>").text("SM ").addClass("sm").appendTo($agency);
+}
+if (tour.agency.includes(YG)) {
+$("<span>").text("YG ").addClass("yg").appendTo($agency);
+}
+});
+
+
 }
