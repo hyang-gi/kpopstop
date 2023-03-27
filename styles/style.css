@@ -26,7 +26,7 @@ body {
 
 @media only screen and (max-width: 1279px) {
   .header {
-    padding: 1rem 6rem 1rem 6rem;
+    padding: 1rem 4rem 1rem 4rem;
   }
 
   .header .top-bar .primary-nav {
@@ -38,8 +38,12 @@ body {
     height: 2rem;
   }
 
-  .companies-container {
+  .companies-container, .building-container {
     display: block !important;
+  }
+
+  .about-us-container, .terms-container, .qa-container, .acc-info {
+    padding: 2rem 9rem 4rem 9rem !important;
   }
 
   .company-block-photo {
@@ -609,7 +613,7 @@ textarea {
 
 /* Terms & Conditions */
 .terms-container {
-  margin: 3% 20% 3% 20%;
+  padding: 2rem 18rem 4rem 18rem;
 }
 
 .terms-container span {
@@ -631,7 +635,7 @@ textarea {
 }
 
 .terms-container p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   padding-bottom: 2%;
   text-align: justify;
   font-family: Helvetica, Arial, sans-serif;
