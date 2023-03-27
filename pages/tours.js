@@ -1,3 +1,4 @@
+
 const ALL="All",
 HYBE="HYBE",
 JYP="JYP",
@@ -129,4 +130,6 @@ if (tour.agency.includes(YG)) {
 $("<span>").text("YG ").addClass("yg").appendTo($agency);
 }
 });
+
+
 }

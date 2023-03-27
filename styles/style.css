@@ -14,7 +14,7 @@
 
 /* Global styles */
 body {
-  font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background-color: #0E1114;
@@ -26,7 +26,7 @@ body {
 
 @media only screen and (max-width: 1279px) {
   .header {
-    padding: 1rem 6rem 1rem 6rem;
+    padding: 1rem 4rem 1rem 4rem;
   }
 
   .header .top-bar .primary-nav {
@@ -38,8 +38,12 @@ body {
     height: 2rem;
   }
 
-  .companies-container {
+  .companies-container, .building-container {
     display: block !important;
+  }
+
+  .about-us-container, .terms-container, .qa-container, .acc-info {
+    padding: 2rem 9rem 4rem 9rem !important;
   }
 
   .company-block-photo {
@@ -54,7 +58,7 @@ body {
 
 .content-title {
   display: block;
-  font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: 2rem;
   color: #A3E7FC;
@@ -112,9 +116,9 @@ body {
   color: var(--primary);
 }
 
-.menu-item a:visited {
+/* .menu-item a:visited {
   color: #f2f2f2;
-}
+} */
 
 /* Secondary Navbar for buildings page */
 
@@ -380,12 +384,24 @@ textarea {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: "HelveticaNeue-CondensedBold", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-CondensedBold", "Roboto Condensed", Helvetica, Arial, sans-serif;
 }
 
 .contact-button:hover {
   color: #0E1114;
   background: #A3E7FC;
+}
+
+/* Accessibility Styles */
+.acc-info {
+  text-align: left;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #f2f2f2;
+  display: flex;
+  text-align: left;
+  padding: 2rem 18rem 4rem 18rem;
 }
 
 /* Aboout Us Styles */
@@ -394,10 +410,8 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: justify;
-  margin-left: 15rem;
-  margin-right: 15rem;
-  margin-bottom: 5rem;
-  font-family: "HelveticaNeue", Helvetica, sans-serif;
+  padding: 2rem 18rem 4rem 18rem;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
 }
@@ -422,9 +436,184 @@ textarea {
   text-align: left;
 }
 
+/* Tours Styles */
+
+.filter-container {
+  position: relative;
+  left: 10%;
+  display: inline-block;
+  width: 10%;
+  display: flex;
+}
+
+.filter-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-label {
+  display: block;
+  font-weight: normal;
+  margin-left: 5px;
+  float: left;
+  width: 0;
+}
+
+.filter-selected {
+  display: block;
+  padding-left: 2rem;
+}
+
+.filter-icon {
+  display: block;
+  font-size: 12px;
+  transition: transform 0.2s ease-in-out;
+  float: right;
+}
+
+.filter-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  background-color: hsl(0, 0%, 0%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.filter-option {
+  display: flex;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: normal;
+  white-space: nowrap;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.filter-option:hover {
+  background-color: #7e7e7e;
+}
+
+.filter-option.disabled {
+  color: var(--primary);
+  cursor: default;
+}
+
+.filter-options.show {
+  display: block;
+}
+
+.filter-icon.rotate {
+  transform: rotate(180deg);
+}
+
+#tour-list {
+  height: auto;
+  padding: 2% 10%;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#tour-list li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 50%;
+}
+
+#tour-list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  width: 100%;
+  text-decoration: none;
+  cursor: default;
+}
+
+.tours-image-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer
+}
+
+.tours-image-container img {
+  width: 95%;
+  height: 40vh;
+  display: block;
+}
+
+.title-container {
+  margin-top: 1vh;
+  float: left;
+  cursor: pointer
+}
+
+.tour-title {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-size: 100%;
+  color: #F2F2F2;
+}
+
+.agency {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5vh;
+}
+
+.tag-hybe {
+  background-color: var(--hybe);
+  color: #F2F2F2;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.tag-jyp {
+  background-color: var(--jype);
+  color: #F2F2F2;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.tag-sm {
+  background-color: var(--sme);
+  color: #F2F2F2;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.tag-yg {
+  background-color: var(--yge);
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  color: #F2F2F2;
+}
+
 /* Terms & Conditions */
 .terms-container {
-  margin: 3% 20% 3% 20%;
+  padding: 2rem 18rem 4rem 18rem;
 }
 
 .terms-container span {
@@ -446,7 +635,7 @@ textarea {
 }
 
 .terms-container p {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   padding-bottom: 2%;
   text-align: justify;
   font-family: Helvetica, Arial, sans-serif;
@@ -457,6 +646,22 @@ textarea {
   padding-bottom: 2%;
   padding-left: 6%;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Help Page */
+.qa-container {
+  padding: 2rem 18rem 4rem 18rem;
+}
+
+.qa-info {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.help-link {
+  color: var(--primary);
+  text-decoration: none;
 }
 
 /* Footer container */
