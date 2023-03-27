@@ -110,8 +110,8 @@ const $list = $("#tour-list");
 filteredTours.forEach(function(tour) {
 const $item = $("<li>").appendTo($list);
 const $link = $("<a>").attr("href", tour.link).appendTo($item);
-const $imageContainer = $("<div>").addClass("image-container").appendTo($link);
-const $image = $("<img>").attr("src", tour.imageSrc).appendTo($imageContainer);
+const $imageContainer = $("<div>").addClass("tour-image-container").appendTo($link);
+const $image = $("<img>").addClass("img").attr("src", tour.imageSrc).appendTo($imageContainer);
 const $titleContainer = $("<div>").addClass("title-container").appendTo($link);
 const $title = $("<div>").addClass("main-title").text(tour.title).appendTo($titleContainer);
 const $agency = $("<div>").addClass("agency").appendTo($titleContainer);
