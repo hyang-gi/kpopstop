@@ -17,6 +17,11 @@ const history = {
     bandLogo3Src: "../images/bands/hybe/bandLogo3.png",
     bandLogo4Src: "../images/bands/hybe/bandLogo4.png",
     bandLogo5Src: "../images/bands/hybe/bandLogo5.png",
+    galleryText: `From when the company was named Big Hit Entertainment and was located in another location, HYBE has been an active spot for fans, especially ARMYs because of their nostalgic association of BTS' trainee days. 
+    The old building's wall is engraved with signs to commemorate the band. The new building which parallels the growth 
+    of the company has extensive dance practice rooms. Dance practice rooms are an important part of the kpop experience as idols share their progress and
+    updates with their fans virtually. Along with various rooms dedicated to the idols, the building sports moveable meeting rooms, cafeteria, and more details are listed in the layout plans
+    of the building.`,
     galleryImage1Src: "../images/buildings/hybe/g0_oldBuilding.jpg",
     galleryImage2Src: "../images/buildings/hybe/g1_bts.png",
     galleryImage3Src: "../images/buildings/hybe/img5.jpg",
@@ -46,6 +51,7 @@ const history = {
     bandLogo3Src: "../images/bands/yge/bandLogo3.png",
     bandLogo4Src: "../images/bands/yge/bandLogo4.png",
     bandLogo5Src: "../images/bands/yge/bandLogo5.png",
+    galleryText: `YG Entertainment unveiled its new futuristic-looking building in 2021, designed by UNStudio. It has nine top floors, five additional floors underground, and an internal bridge that connects it to the old YG Building. The exterior is designed to resemble an "urban speaker" with glass and aluminium panels, and BIPV (building-integrated photovoltaics) solar cells are integrated in the south-facing facade and on the roof. The interior design is white tones and geometric lines, with large open spaces and high ceilings. The structure also includes capsule-style meeting rooms and work zones with full glass windows, and amenities such as a two-story auditorium, seven large dance practice rooms, seven recording studios outfitted with cutting-edge technology, and 30 personal studios.`,
     galleryImage1Src: "../images/buildings/yge/img4.jpg",
     galleryImage2Src: "../images/buildings/yge/g1_dance.jpg",
     galleryImage3Src: "../images/buildings/yge/img11.jpg",
@@ -75,6 +81,7 @@ const history = {
     bandLogo3Src: "../images/bands/sme/bandLogo3.png",
     bandLogo4Src: "../images/bands/sme/bandLogo4.png",
     bandLogo5Src: "../images/bands/sme/bandLogo5.png",
+    galleryText: `SM Entertainment's modern and sleek-looking building is located in the fashionable neighbourhood Seongsu-dong within the Acro Seoul Forest complex. It features a modern interior with windows and open space for employees to socialise, a back area for coffee machines and snacks, and an in-house garden for relaxing. On November 17th, 2022, SM added a new space called the 'Kwangya Seoul' which provides an SM Town shopping experience and digital services. The store was designed to offer visiting fans an experience of living in the SM Entertainment Universe, recreating the metaverse with clear OLED display panels.`,
     galleryImage1Src: "../images/buildings/sme/img7.jpg",
     galleryImage2Src: "../images/buildings/sme/exo_dance.jpg",
     galleryImage3Src: "../images/buildings/sme/sm_building.jpg",
@@ -104,6 +111,7 @@ const history = {
     bandLogo3Src: "../images/bands/jype/bandLogo3.png",
     bandLogo4Src: "../images/bands/jype/bandLogo4.png",
     bandLogo5Src: "../images/bands/jype/bandLogo5.png",
+    galleryText: `JYP Entertainment's new building, located in Seongnae-dong District of Seoul, is made of eco-friendly materials and has an estimated value of 43 billion won. It consists of dance studios, vocal practice rooms, and a band room. The interior design is influenced by Western artists such as Michael Jackson, Bobby Brown, and Madonna, with 15 rooms inspired by musicians from the 70s, 80s, and 90s. The top floors of the building houses recording studios, and the rooftop garden offers a perfect view of the city.`,
     galleryImage1Src: "../images/buildings/jype/2pm_dance.png",
     galleryImage2Src: "../images/buildings/jype/nmix_dance.png",
     galleryImage3Src: "../images/buildings/jype/g3_basement.png",
@@ -112,7 +120,7 @@ const history = {
     galleryImage6Src: "../images/buildings/jype/g7_corridor.png",
     galleryImage7Src: "../images/buildings/jype/g8_musicFactory.png",
     galleryImage8Src: "../images/buildings/jype/g9_room.png",
-    galleryImage9Src: "../images/buildings/jype/g10_musicRoom.png",
+    galleryImage9Src: "../images/buildings/jype/g5_terrace.png",
     mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3142909763856!2d127.12691871491091!3d37.5240879343164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca47a55555555%3A0x83f404863f3fb36a!2sJYP%20ENTERTAINMENT!5e0!3m2!1sen!2sie!4v1679501432265!5m2!1sen!2sie",
   },
 };
@@ -176,6 +184,7 @@ $(document).ready(() => {
   $("#band-logo3").attr("src", buildingData.bandLogo3Src);
   $("#band-logo4").attr("src", buildingData.bandLogo4Src);
   $("#band-logo5").attr("src", buildingData.bandLogo5Src);
+  $(".galleryText").text(buildingData.galleryText);
   $(".image-container img").css('border', `2px solid var(--${id})`);
   $(".image-container2 img").css('border', `2px solid var(--${id})`);
   $(".image-container3 img").css('border', `2px solid var(--${id})`);
