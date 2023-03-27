@@ -17,6 +17,16 @@ const history = {
     bandLogo3Src: "../images/bands/hybe/bandLogo3.png",
     bandLogo4Src: "../images/bands/hybe/bandLogo4.png",
     bandLogo5Src: "../images/bands/hybe/bandLogo5.png",
+    galleryImage1Src: "../images/buildings/hybe/g0_oldBuilding.jpg",
+    galleryImage2Src: "../images/buildings/hybe/g1_bts.png",
+    galleryImage3Src: "../images/buildings/hybe/img5.jpg",
+    galleryImage4Src: "../images/buildings/hybe/img10.png",
+    galleryImage5Src: "../images/buildings/hybe/img11.png",
+    galleryImage6Src: "../images/buildings/hybe/img12.png",
+    galleryImage7Src: "../images/buildings/hybe/img13.jpg",
+    galleryImage8Src: "../images/buildings/hybe/img4.jpg",
+    galleryImage9Src: "../images/buildings/hybe/img2.jpg",
+    mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.302307309309!2d126.95969162555623!3d37.52437046972386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1adbde4193d%3A0xb66b720a6871a40a!2sHYBE%20HQ!5e0!3m2!1sen!2sie!4v1679500864734!5m2!1sen!2sie"
   },
   yge: {
     title: "YG Entertainment",
@@ -36,6 +46,16 @@ const history = {
     bandLogo3Src: "../images/bands/yge/bandLogo3.png",
     bandLogo4Src: "../images/bands/yge/bandLogo4.png",
     bandLogo5Src: "../images/bands/yge/bandLogo5.png",
+    galleryImage1Src: "../images/buildings/yge/img4.jpg",
+    galleryImage2Src: "../images/buildings/yge/g1_dance.jpg",
+    galleryImage3Src: "../images/buildings/yge/img11.jpg",
+    galleryImage4Src: "../images/buildings/yge/img12.jpg",
+    galleryImage5Src: "../images/buildings/yge/img13.jpg",
+    galleryImage6Src: "../images/buildings/yge/img14.jpg",
+    galleryImage7Src: "../images/buildings/yge/img15.jpg",
+    galleryImage8Src: "../images/buildings/yge/img9.jpg",
+    galleryImage9Src: "../images/buildings/yge/img1.jpg",
+    mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2543036650336!2d126.90592631491177!3d37.5490719328865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c992bb3f6a887%3A0x6058954f87325221!2sYG%20Entertainment!5e0!3m2!1sen!2sie!4v1679501516869!5m2!1sen!2sie",
   },
   sme: {
     title: "SM Entertainment",
@@ -55,6 +75,16 @@ const history = {
     bandLogo3Src: "../images/bands/sme/bandLogo3.png",
     bandLogo4Src: "../images/bands/sme/bandLogo4.png",
     bandLogo5Src: "../images/bands/sme/bandLogo5.png",
+    galleryImage1Src: "../images/buildings/sme/img7.jpg",
+    galleryImage2Src: "../images/buildings/sme/exo_dance.jpg",
+    galleryImage3Src: "../images/buildings/sme/sm_building.jpg",
+    galleryImage4Src: "../images/buildings/sme/img3.jpg",
+    galleryImage5Src: "../images/buildings/sme/img4.jpg",
+    galleryImage6Src: "../images/buildings/sme/img5.jpg",
+    galleryImage7Src: "../images/buildings/sme/img6.jpg",
+    galleryImage8Src: "../images/buildings/sme/img14.jpg",
+    galleryImage9Src: "../images/buildings/sme/img12.jpg",
+    mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.451930166916!2d127.04159051491169!3d37.54441493315315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca46e21c25855%3A0xb969fc2b68758946!2sSM%20ENTERTAINMENT!5e0!3m2!1sen!2sie!4v1679501475719!5m2!1sen!2sie",
   },
   jype: {
     title: "JYP Entertainment",
@@ -74,25 +104,16 @@ const history = {
     bandLogo3Src: "../images/bands/jype/bandLogo3.png",
     bandLogo4Src: "../images/bands/jype/bandLogo4.png",
     bandLogo5Src: "../images/bands/jype/bandLogo5.png",
-  },
-};
-
-const gallery = {
-  hybe: {
-    imageSrcs: [],
-    text: [],
-  },
-  yge: {
-    imageSrcs: [],
-    text: [],
-  },
-  sme: {
-    imageSrcs: [],
-    text: [],
-  },
-  jype: {
-    imageSrcs: [],
-    text: [],
+    galleryImage1Src: "../images/buildings/jype/2pm_dance.png",
+    galleryImage2Src: "../images/buildings/jype/nmix_dance.png",
+    galleryImage3Src: "../images/buildings/jype/g3_basement.png",
+    galleryImage4Src: "../images/buildings/jype/g4_bandroom.png",
+    galleryImage5Src: "../images/buildings/jype/g6_canteen.png",
+    galleryImage6Src: "../images/buildings/jype/g7_corridor.png",
+    galleryImage7Src: "../images/buildings/jype/g8_musicFactory.png",
+    galleryImage8Src: "../images/buildings/jype/g9_room.png",
+    galleryImage9Src: "../images/buildings/jype/g10_musicRoom.png",
+    mapLink: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3142909763856!2d127.12691871491091!3d37.5240879343164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca47a55555555%3A0x83f404863f3fb36a!2sJYP%20ENTERTAINMENT!5e0!3m2!1sen!2sie!4v1679501432265!5m2!1sen!2sie",
   },
 };
 
@@ -149,12 +170,24 @@ $(document).ready(() => {
   $(".heading1Text").text(buildingData.heading1Text);
   $(".heading2Text").text(buildingData.heading2Text);
   $(".heading3Text").text(buildingData.heading3Text);
-  // $("#building-img3").attr("src", buildingData.img3Src);
-  // $("#building-img4").attr("src", buildingData.img4Src);
   $("#building-img5").attr("src", buildingData.img5Src);
   $("#band-logo1").attr("src", buildingData.bandLogo1Src);
   $("#band-logo2").attr("src", buildingData.bandLogo2Src);
   $("#band-logo3").attr("src", buildingData.bandLogo3Src);
   $("#band-logo4").attr("src", buildingData.bandLogo4Src);
   $("#band-logo5").attr("src", buildingData.bandLogo5Src);
+  $(".image-container img").css('border', `2px solid var(--${id})`);
+  $(".image-container2 img").css('border', `2px solid var(--${id})`);
+  $(".image-container3 img").css('border', `2px solid var(--${id})`);
+  $("#gallery-image1").attr("src", buildingData.galleryImage1Src);
+  $("#gallery-image2").attr("src", buildingData.galleryImage2Src);
+  $(".gallery-image3").attr("src", buildingData.galleryImage3Src);
+  $("#gallery-image4").attr("src", buildingData.galleryImage4Src);
+  $("#gallery-image5").attr("src", buildingData.galleryImage5Src);
+  $("#gallery-image6").attr("src", buildingData.galleryImage6Src);
+  $("#gallery-image7").attr("src", buildingData.galleryImage7Src);
+  $("#gallery-image8").attr("src", buildingData.galleryImage8Src);
+  $("#gallery-image9").attr("src", buildingData.galleryImage9Src);
+  $(".map-link").attr("src", buildingData.mapLink);
+  $(".map-link").css('border', `2px solid var(--${id})`);
 });
