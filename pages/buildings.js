@@ -1,6 +1,6 @@
 const history = {
   hybe: {
-    title: "HYBE Entertainment",
+    title: "HYBE Corporation",
     titleText1: `HYBE Corporation is considered among the top 4 Big Companies of the South Korean K-pop industry and is home to global K-pop superstars, BTS. The company started out as ‘Big Hit Entertainment’ when it was founded in 2005 by Bang Si-hyuk, who continues to run the business today. In 2021, the company changed its name to HYBE to reflect the new labels and divisions within the entire Corporation.`,
     titleText2: `HYBE operates as a record label, talent agency, music production company, event management and concert production company, and music publishing house. Currently, it manages many popular K-pop groups such as BTS, Tomorrow X Together, Enhypen, Le Sserafim, NewJeans, and Seventeen. In 2021, the company was named as one of the "100 Most Influential Companies of 2021" by ‘Time’ magazine.`,
     heading1: `Building Details`,
