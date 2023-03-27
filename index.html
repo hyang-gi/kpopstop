@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <link rel="stylesheet" media="screen and (min-width:701px)" href="./styles/index-mobile.css">
+    <link rel="stylesheet" href="./styles/index-mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -16,7 +17,8 @@
             <div class="logo">
                 <a href="index.html"><img src="./images/logo.svg" alt="kpopstop"></a>
             </div>
-            <div class="primary-nav">
+            <button class="hamburger-menu"><i class="fa-sharp fa-solid fa-bars" style="color: #f2f2f2;"></i></button>
+            <div class="primary-nav nav-hidden">
                 <div class="menu-item"><a href="./index.html">Buildings</a></div>
                 <div class="menu-item"><a href="./pages/tours.html">Tours</a></div>
                 <div class="menu-item"><a href="./pages/trends.html">Trends</a></div>
@@ -81,5 +83,15 @@
         </div>
     </div>
 </body>
+
+<script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const primaryNav = document.querySelector('.primary-nav');
+
+    hamburgerMenu.addEventListener('click', () => {
+    primaryNav.classList.toggle('nav-hidden');
+    primaryNav.classList.toggle('nav-visible');
+    });
+</script>
 
 </html>
