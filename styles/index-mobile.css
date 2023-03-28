@@ -14,7 +14,7 @@
         font-size: 1.5rem;
         background: transparent;
         border: none;
-        color: #fff;
+        color: #f2f2f2;
         cursor: pointer;
         position: absolute;
         right: 1.5rem;
@@ -28,7 +28,7 @@
     
     .primary-nav a {
         text-decoration: none;
-        color: #fff;
+        color: #f2f2f2;
         margin-right: 1rem;
     }
     
@@ -49,7 +49,7 @@
         position: absolute;
         top: 7.5rem;
         right: 0;
-        background-color: #2f2f2f;
+        background-color: #0E1114;
         padding: 1rem;
         z-index: 999;
         width: 100%;

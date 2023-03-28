@@ -85,13 +85,9 @@
 </body>
 
 <script>
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const primaryNav = document.querySelector('.primary-nav');
-
-    hamburgerMenu.addEventListener('click', () => {
-    primaryNav.classList.toggle('nav-hidden');
-    primaryNav.classList.toggle('nav-visible');
-    });
+$('.hamburger-menu').click(function() {
+  $('.primary-nav').toggleClass('nav-hidden nav-visible');
+});
 </script>
 
 </html>

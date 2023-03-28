@@ -10,6 +10,10 @@ $(document).ready(function () {
     })
     $("head").append(mobileStyleLink);
     $("head").append(fontLink);
+    $(document).on('click', '.hamburger-menu', function () {
+        console.log("hamburger moves");
+        $('.primary-nav').toggleClass('nav-hidden nav-visible');
+    });
     $(".header").load("../templates.html #header", function (content) {
         console.log("header load performed");
     });
