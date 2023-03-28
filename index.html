@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="./styles/index-mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -86,9 +87,12 @@
 </body>
 
 <script>
-$('.hamburger-menu').click(function() {
-  $('.primary-nav').toggleClass('nav-hidden nav-visible');
-});
+    $(document).ready(() => {
+        $(document).on('click', '.hamburger-menu', function () {
+            console.log("hamburger clicks");
+            $('.primary-nav').toggleClass('nav-hidden nav-visible');
+        });
+    });
 </script>
 
 </html>
