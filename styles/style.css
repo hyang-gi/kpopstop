@@ -291,6 +291,12 @@ body {
   padding: 0rem 1rem 0rem 1rem;
 }
 
+@media screen and (min-width: 700px) {
+.slideshow-container {
+    display: none;
+  }
+}
+
 /*  Map container */
 
 .map-container {

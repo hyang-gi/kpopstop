@@ -29,6 +29,17 @@
     <div class="building-container">
         <div class="galleryText long-text"><span></span></div>
     </div>
+    <div class="slideshow-container">
+        <div class="slideshow-image"><img class="gallery-image1" src="" alt="Gallery image 1"></div>
+        <div class="slideshow-image"><img class="gallery-image2" src="" alt="Gallery image 2"></div>
+        <div class="slideshow-image"><img class="gallery-image3" src="" alt="Gallery image 3 left"></div>
+        <div class="slideshow-image"><img class="gallery-image4" src="" alt="Gallery image 4 left"></div>
+        <div class="slideshow-image"><img class="gallery-image5" src="" alt="Gallery image 5 middle"></div>
+        <div class="slideshow-image"><img class="gallery-image6" src="" alt="Gallery image 6 right"></div>
+        <div class="slideshow-image"><img class="gallery-image7" src="" alt="Gallery image 7 right"></div>
+        <div class="slideshow-image"><img class="gallery-image8" src="" alt="Gallery image 8"></div>
+        <div class="slideshow-image"><img class="gallery-image9" src="" alt="Gallery image 9"></div>
+    </div>
     <div class="image-container">
         <img id="gallery-image1" src="" alt="Gallery image 1">
         <div class="image-spacer"></div>
@@ -57,5 +68,56 @@
     </div>
     <div class="footer"></div>
 </body>
+
+<script>
+    $(document).ready(function() {
+        var slideshowImages = $('.slideshow-image');
+        var slideshowControls = $('<div class="slideshow-controls"></div>');
+        slideshowControls.append('<span class="slideshow-control prev" alt="prev"><i class="fas fa-angle-left"></i></span>');
+        slideshowControls.append('<span class="slideshow-control next" alt="next"><i class="fas fa-angle-right"></i></span>');
+        $('.slideshow-container').append(slideshowControls);
+        
+        // Hide all slideshow images except the first one
+        slideshowImages.not(':first').addClass('hide');
+        
+        var slideshowIndex = 0;
+        var slideshowTimer = setInterval(function() {
+            slideshowImages.eq(slideshowIndex).addClass('hide');
+            slideshowIndex++;
+            if (slideshowIndex >= slideshowImages.length) {
+            slideshowIndex = 0;
+            }
+            slideshowImages.eq(slideshowIndex).removeClass('hide');
+            slideshowControls.children().removeClass('active');
+            slideshowControls.children().eq(slideshowIndex+1).addClass('active');
+        }, 3000);
+        
+        $('.slideshow-control').on('click', function() {
+            clearInterval(slideshowTimer);
+            var direction = $(this).hasClass('prev') ? -1 : 1;
+            slideshowImages.eq(slideshowIndex).addClass('hide');
+            slideshowIndex += direction;
+            if (slideshowIndex < 0) {
+                slideshowIndex = slideshowImages.length - 1;
+            } else if (slideshowIndex >= slideshowImages.length) {
+                slideshowIndex = 0;
+            }
+            slideshowImages.eq(slideshowIndex).removeClass('hide');
+            slideshowControls.children().removeClass('active');
+            slideshowControls.children().eq(slideshowIndex+1).addClass('active');
+            slideshowTimer = setInterval(function() {
+            slideshowImages.eq(slideshowIndex).addClass('hide');
+            slideshowIndex++;
+            if (slideshowIndex >= slideshowImages.length) {
+                slideshowIndex = 0;
+            }
+            slideshowImages.eq(slideshowIndex).removeClass('hide');
+            slideshowControls.children().removeClass('active');
+            slideshowControls.children().eq(slideshowIndex+1).addClass('active');
+            }, 3000);
+        });
+    });
+
+</script>
 
 </html>

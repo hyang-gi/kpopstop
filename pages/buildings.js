@@ -189,7 +189,7 @@ $(document).ready(() => {
   $(".image-container2 img").css('border', `2px solid var(--${id})`);
   $(".image-container3 img").css('border', `2px solid var(--${id})`);
   $("#gallery-image1").attr("src", buildingData.galleryImage1Src);
-  $("#gallery-image2").attr("src", buildingData.galleryImage2Src);
+  $("#gallery-image2").attr("src", buildingData.galleryImage2Src); 
   $(".gallery-image3").attr("src", buildingData.galleryImage3Src);
   $("#gallery-image4").attr("src", buildingData.galleryImage4Src);
   $("#gallery-image5").attr("src", buildingData.galleryImage5Src);
@@ -199,4 +199,18 @@ $(document).ready(() => {
   $("#gallery-image9").attr("src", buildingData.galleryImage9Src);
   $(".map-link").attr("src", buildingData.mapLink);
   $(".map-link").css('border', `2px solid var(--${id})`);
+
+   //slideshow images
+  $(".gallery-image1").attr("src", buildingData.galleryImage1Src);
+  $(".gallery-image2").attr("src", buildingData.galleryImage2Src);
+  $(".gallery-image4").attr("src", buildingData.galleryImage4Src);
+  $(".gallery-image5").attr("src", buildingData.galleryImage5Src);
+  $(".gallery-image6").attr("src", buildingData.galleryImage6Src);
+  $(".gallery-image7").attr("src", buildingData.galleryImage7Src);
+  $(".gallery-image8").attr("src", buildingData.galleryImage8Src);
+  $(".gallery-image9").attr("src", buildingData.galleryImage9Src);
+  $(".slideshow-container").css('border', `solid var(--${id})`);
+
+
 });
+
