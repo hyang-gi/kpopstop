@@ -1,0 +1,265 @@
+@media only screen and (max-width: 700px) {
+
+    /* Global styles for Mobile */
+
+    /* Header Mobile Styles */
+
+    .header {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    /* Hamburger menu */
+    .hamburger-menu {
+        display: block;
+        font-size: 1.5rem;
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        right: 1.5rem;
+    }
+    
+    /* Navigation links */
+    .primary-nav {
+        display: flex;
+        align-items: center;
+    }
+    
+    .primary-nav a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 1rem;
+    }
+    
+    /* Hide navigation links on small screens */
+    .primary-nav {
+        display: none;
+    }
+
+    
+    /* Show navigation links when hamburger menu is clicked */
+    .nav-hidden {
+        display: none;
+    }
+    
+    .nav-visible {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 7.5rem;
+        right: 0;
+        background-color: #2f2f2f;
+        padding: 1rem;
+        z-index: 999;
+        width: 100%;
+        border-bottom: solid #f2f2f2;
+        border-top: solid #f2f2f2;
+    }
+
+    .menu-item {
+        font-size: 1.3rem
+    }
+    
+    .nav-visible a {
+        margin-bottom: 0.5rem;
+    }
+
+    .companies-container {
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    /* Footer Mobile Styles */
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-nav-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 2rem;
+    }
+
+    /* Contact Mobile Styles */
+
+    .contact-container {
+        display: none;
+    }
+
+    .mobile-contact-container {
+        display: block;
+    }
+
+    .content-title {
+        padding-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .content {
+        display: block;
+    }
+
+    .details {
+        margin: 0;
+    }
+
+    .message-box {
+        min-height: 20rem;
+    }
+    
+    /* About Us Mobile Styles */
+
+    .about-us-container {
+        padding: 2rem 2rem 2rem 2rem !important;
+    }
+
+    .company-bio .content-title {
+        font-size: 1.5rem;
+    }
+
+    .teamshot img {
+        max-width: 80%;
+    }
+
+    .teamshot p {
+        text-align: center;
+    }
+
+    /* Terms and Conditions Mobile Styles */
+
+    .terms-container {
+        padding: 2rem 2rem 2rem 2rem !important;
+    }
+
+    .terms-container .content-title {
+        font-size: 1.5rem;
+    }
+
+    .terms-container span {
+        padding-bottom: 10%;
+    }
+
+    .terms-container h2 {
+        font-size: 1.2rem;
+        padding-bottom: 5%;
+    }
+
+    .terms-container p {
+        padding-bottom: 10%;
+    }
+
+    .terms-container ul {
+        padding-bottom: 10%;
+    }
+
+    /* Help Mobile Styles */
+
+    .qa-container {
+        padding: 2rem 2rem 2rem 2rem !important;
+    }
+
+    .qa-container .content-title {
+        font-size: 1.4rem;
+    }
+
+    /* Accessibility Mobile Styles */
+
+    .acc-info {
+        padding: 2rem 2rem 2rem 2rem !important; 
+        text-align: justify;
+    }
+
+    /* Buildings History Mobile Styles */
+
+    .secondary-nav {
+        justify-content: space-around;
+        padding: 0rem 1rem 2.5rem 1rem;
+    }
+
+    .secondary-nav-button {
+        padding: 1rem 1rem 1rem 1rem; 
+    }
+
+    .building-container {
+        padding: 0rem 2rem 1rem 2rem;
+    }
+
+    .building-img {
+        max-width: 100%;
+    }
+
+    .building-text .title {
+        font-size: 2rem;
+    }
+
+    .building-container .long-text {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .logo-container {
+        padding: 2rem;
+    }
+
+    .band-logo {
+        width: 16%;
+    }
+
+    .logo-container .spacer {
+        padding: 0rem 1rem 0 0;
+    }
+
+    .spacer {
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
+    #building-img2 {
+        max-width: 100%;
+    }
+
+    #building-img5 {
+        max-width: 100%;
+    }
+
+     /* Buildings Map Mobile Styles */
+
+     .map-container {
+        padding: 0rem 2rem 2rem 2rem;
+     }
+
+     .map-container iframe {
+        height: 24rem;
+    }
+
+    /* Trends Mobile Styles */
+    
+    .article-item {
+        margin-bottom: 4vh !important;
+        padding: 3% !important;
+        height: fit-content !important;
+        flex-direction: column !important;
+    }
+
+    .article-image {
+        margin-right: 0 !important;
+        width: 100% !important;
+        height: 11rem !important;
+    }
+
+    .article-text {
+        width: 100% !important;
+    }
+
+    .article-title {
+        margin-top: 3vh !important;
+        font-size: 1rem !important;
+    }
+
+    .article-extract {
+        display: none !important;
+    }
+
+  }

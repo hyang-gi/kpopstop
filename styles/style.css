@@ -24,6 +24,10 @@ body {
   flex-direction: column;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
 @media only screen and (max-width: 1279px) {
   .header {
     padding: 1rem 4rem 1rem 4rem;
@@ -306,7 +310,9 @@ body {
   padding: 2rem;
 }
 
-
+.mobile-contact-container {
+  display: none;
+}
 .contact-container {
   border: thin solid #F2F2F2;
   padding: 2rem;
