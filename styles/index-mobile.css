@@ -318,4 +318,24 @@
     .slideshow-control:focus {
         outline: none;
     }
-  }
+
+    /* Tours Mobile Styles */
+
+    .filter-container {
+        width: 30%;
+    }
+
+    #tour-list {
+        padding: 2% 5%;
+        flex-direction: column;
+    }
+
+    #tour-list li {
+        width: 100%;
+    }
+
+    .tour-title {
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+}
