@@ -16,6 +16,8 @@ Note: This section will be updated based on weekly-basis based on the project pr
 3. Site Map and Task Flows
 4. Information Map & Wireframes
 5. Accessibility Plan and Social Media Integration Plan
+6. HTML and CSS
+7. Presentation and Website URL
 
 
 ## Navigation
