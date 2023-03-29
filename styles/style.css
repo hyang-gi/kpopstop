@@ -50,13 +50,18 @@ body {
   .about-us-container,
   .terms-container,
   .qa-container,
-  .acc-info {
+  .acc-info,
+  .sources-links-container {
     padding: 2rem 9rem 4rem 9rem !important;
   }
 
   .company-block-photo {
     width: 200% !important;
   }
+
+.sources-links-container ul {
+    font-size: 1.5rem;
+}
 }
 
 /* long-text class added to lengthy text content for easy reading */
