@@ -111,7 +111,7 @@ function renderList(filter) {
     const $item = $("<li>").appendTo($list);
     const $link = $("<a>").attr("href", tour.link).appendTo($item);
     const $imageContainer = $("<div>").addClass("tours-image-container").appendTo($link);
-    const $image = $("<img>").attr("src", tour.imageSrc).appendTo($imageContainer);
+    const $image = $("<img>").attr("src", tour.imageSrc).attr("alt", tour.title).appendTo($imageContainer);
     const $titleContainer = $("<div>").addClass("title-container").appendTo($link);
     const $title = $("<div>").addClass("tour-title").text(tour.title).appendTo($titleContainer);
     const $agency = $("<div>").addClass("agency").appendTo($titleContainer);
