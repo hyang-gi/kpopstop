@@ -22,10 +22,10 @@
         <div class="left-side">
           <form id="contact-form">
             <div class="input-box">
-              <input type="text" id="subject" name="subject" placeholder="Enter your subject*" required />
+              <input type="text" id="subject" name="subject" placeholder="Enter your subject*" tabindex="1" required />
             </div>
             <div class="input-box">
-              <select id="issue" name="issue">
+              <select id="issue" name="issue" tabindex="2">
                 <option>Select an issue*</option>
                 <option>Links not working</option>
                 <option>Accessibility problem</option>
@@ -34,20 +34,20 @@
               </select>
             </div>
             <div class="input-box">
-              <input type="email" id="email" name="email" placeholder="Enter your email*" required />
+              <input type="email" id="email" name="email" placeholder="Enter your email*" tabindex="3" required />
             </div>
-            
+            <button type="submit" class="contact-button" tabindex="5">Submit</button>
           </form>
         </div>
         <div class="right-side">
           <div class="details">
             <div class="input-box message-box">
-              <textarea id="message" name="message" placeholder="Enter your message..." required></textarea>
+              <textarea id="message" name="message" placeholder="Enter your message..." tabindex="4" required></textarea>
             </div>
           </div>
         </div>
       </div>
-      <button type="submit" class="contact-button">Submit</button>
+      
     </div>
     <div class="mobile-contact-container">
       <div class="content-title">Want to get in touch? Send us a message!</div>
@@ -137,18 +137,6 @@
         alert(`Error: ${error}`);
       });
   });
-
-  input.onfocus = function () {
-    browsers.style.display = "block";
-    input.style.borderRadius = "5px 5px 0 0";
-  };
-  for (let option of browsers.options) {
-    option.onclick = function () {
-      input.value = option.value;
-      browsers.style.display = "none";
-      input.style.borderRadius = "5px";
-    };
-  }
 </script>
 
 </html>
