@@ -383,7 +383,7 @@ textarea {
 }
 
 .message-box {
-  min-height: 13.5rem;
+  min-height: 20rem;
 }
 
 .input-box textarea {
@@ -412,6 +412,22 @@ textarea {
 .contact-button:hover {
   color: #0E1114;
   background: #A3E7FC;
+}
+
+select {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #F2F2F2;
+  background: #0E1114;
+  padding: 0 1rem;
+  resize: none;
+}
+
+::placeholder {
+  color: #F2F2F2;
 }
 
 /* Accessibility Styles */
